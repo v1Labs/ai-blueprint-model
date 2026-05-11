@@ -46,9 +46,10 @@ A blueprint can include:
 
 ## Example use cases
 
+- simple greetings and structured summaries
+- social post variants with style consistency
+- internal one-pagers and stakeholder documents
 - GTM one-pagers generated from product inputs
-- product overview briefs with consistent narrative structure
-- technical specification sheets with standardized sections
 - reusable artifact workflows for human-in-the-loop review
 
 ## Repository map
@@ -72,7 +73,19 @@ A blueprint can include:
 - [x] Versioning and compatibility guidance
 - [x] Execution modes documentation
 - [x] Compliance levels (AIBM-Lite, AIBM-Standard, AIBM-Operational)
+- [x] Progressive minimal examples (hello-world → structured-summary → social-post → simple-one-pager)
 - [ ] Additional domain examples
+
+## Examples
+
+The `examples/` directory contains a progression of minimal examples, each introducing a small number of new blueprint concepts:
+
+1. [`examples/hello-world/`](examples/hello-world/blueprint.md) — The smallest valid blueprint.
+2. [`examples/structured-summary/`](examples/structured-summary/blueprint.md) — Adds output formatting, tone guidance, and evaluation.
+3. [`examples/social-post/`](examples/social-post/blueprint.md) — Adds multiple output variants and a human review step.
+4. [`examples/simple-one-pager/`](examples/simple-one-pager/blueprint.md) — Adds stronger contracts and more rigorous evaluation.
+
+Start with `hello-world` if you are new to blueprints. Advanced and operational blueprint examples are listed in [`Blueprints.md`](Blueprints.md).
 
 ## Blueprint libraries
 
@@ -86,7 +99,7 @@ Start with:
 - `CONTRIBUTING.md`
 - `spec/v1.md`
 - `docs/blueprint-anatomy.md`
-- `examples/gtm-one-pager/README.md`
+- `examples/hello-world/blueprint.md`
 
 ## License
 
