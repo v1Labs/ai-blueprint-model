@@ -90,6 +90,8 @@ The `examples/` directory contains:
 1. Schema-aligned package examples (`basic-blueprint`, `asset-blueprint`) that show reusable structure in practice.
 2. A progression of single-file learning examples (`hello-world` → `simple-one-pager`) for concept onboarding.
 
+For all schemas and blueprints in this repository, `README.md` is the canonical entry point. `blueprint.md` is deprecated.
+
 Start with `hello-world` if you are new to blueprints. Advanced and operational blueprint examples are listed in [`Blueprints.md`](Blueprints.md).
 
 ## Blueprint libraries
@@ -104,7 +106,7 @@ Start with:
 - `CONTRIBUTING.md`
 - `spec/v1.md`
 - `docs/blueprint-anatomy.md`
-- `examples/hello-world/blueprint.md`
+- `examples/hello-world/README.md`
 
 ## License
 
