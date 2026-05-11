@@ -1,33 +1,24 @@
 # Schemas
 
-Machine-readable schema artifacts for optional validation workflows.
+A schema defines how a blueprint is structured.
 
-This repository remains markdown-first; schemas are support tools, not the source of truth.
+A blueprint defines what an AI system should create.
 
-- `blueprint-metadata.schema.json`: JSON Schema for blueprint YAML front matter fields (id, version, artifact_type, intent). This schema validates blueprint **metadata only** — it does not validate blueprint behavior, outputs, evaluations, or operational workflows.
+## Schema responsibilities
 
----
+Schemas in this repository define reusable blueprint structure, including:
+- expected file layout
+- required and optional files
+- allowed markdown sections
+- metadata structure for machine-readable validation
+- reusable blueprint shapes
 
-## Scope of current schemas
+Schemas do **not** define blueprint-specific artifact intent, examples, or evaluation outcomes.
 
-The current schema covers blueprint front matter / metadata. It intentionally does not attempt to validate:
-- the content or structure of blueprint sections
-- generation behavior or AI outputs
-- evaluation results or scoring
-- operational workflow execution
+## Available reusable schemas
 
----
+- `basic/` — smallest useful blueprint shape (`README.md`, `inputs.md`, `outputs.md`, `constraints.md`, optional `evaluations.md`)
+- `asset/` — extends `basic` with richer generation structure (`components.md`, `examples/`, `evaluations.md`)
+- `blueprint-metadata.schema.json` — JSON Schema for YAML front matter metadata only
 
-## Future schema categories
-
-As the AIBM tooling ecosystem matures, additional schema categories are planned:
-
-### Input schemas
-Machine-readable definitions of the structured inputs a blueprint requires before generation can begin. Used by automation pipelines to validate that required context is present.
-
-### Evaluation schemas
-Structured definitions of evaluation rubrics, scoring dimensions, and pass/fail thresholds. Enables automated evaluation pipelines to score outputs consistently.
-
-### Output schemas
-Structural definitions of the expected artifact output. Used to validate that generated outputs conform to the blueprint's structural requirements before delivery.
-
+Artifact-specific schemas (for example one-pager/case-study/product-sheet schemas) are deprecated in favor of reusable structure schemas plus blueprint-specific intent files.
