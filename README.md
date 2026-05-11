@@ -37,9 +37,10 @@ A blueprint can include:
 ## What this repo provides
 
 - A shared model and vocabulary for AI blueprint contracts
-- Specification scaffolding and normative guidance in `spec/`
-- Conceptual and operational docs in `docs/`
-- Realistic artifact examples in `examples/`
+- Normative model specification in `spec/`
+- Explanatory documentation and guidance in `docs/`
+- Starter blueprint structures in `templates/` (see `examples/blueprint-template/` in this repo)
+- Illustrative examples in `examples/` (not a canonical production blueprint library)
 - Optional machine-readable helpers in `schemas/`
 - Shared rendering/style assets in `assets/`
 
@@ -50,14 +51,16 @@ A blueprint can include:
 - technical specification sheets with standardized sections
 - reusable artifact workflows for human-in-the-loop review
 
-## Repository structure
+## Repository map
 
 ```text
-/spec        # Specification scaffolding and normative guidance
-/examples    # Concrete, realistic blueprint examples and starter templates
-/docs        # Conceptual and operational documentation
-/schemas     # Optional machine-readable schemas and validation helpers
-/assets      # Shared rendering/style assets used by blueprints
+/spec         # Normative model specification
+/docs         # Explanatory documentation and guidance
+/templates    # Starter blueprint structures (starter template currently in /examples/blueprint-template/)
+/examples     # Illustrative examples only, not canonical production blueprint libraries
+/Blueprints.md # Directory/index of external blueprint libraries and examples
+/schemas      # Optional machine-readable schemas and validation helpers
+/assets       # Shared rendering/style assets used by blueprints
 ```
 
 ## Roadmap (v1)
@@ -73,7 +76,7 @@ A blueprint can include:
 
 ## Blueprint libraries
 
-External blueprint libraries built on AIBM are listed in [`Blueprints.md`](Blueprints.md). Blueprint libraries are encouraged to live in separate repositories that reference the AIBM spec.
+External blueprint libraries built on AIBM are listed in [`Blueprints.md`](Blueprints.md), which serves as a directory/index of libraries and examples outside this repo. Blueprint libraries are encouraged to live in separate repositories that reference the AIBM spec.
 
 ## Contributing
 
