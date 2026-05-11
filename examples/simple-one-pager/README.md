@@ -9,9 +9,9 @@ intent:
 
 # Simple One-Pager Blueprint
 
-Demonstrates layout-aware generation, stronger structural contracts, supporting examples, and a more rigorous evaluation rubric — while remaining intentionally smaller than a full operational blueprint.
+Demonstrates layout-aware generation, stronger structural constraints, supporting examples, and a more rigorous evaluation rubric — while remaining intentionally smaller than a full operational blueprint.
 
-**Concepts introduced:** layout-aware thinking, stronger structural contracts, supporting assets and examples, more rigorous evaluation.
+**Concepts introduced:** layout-aware thinking, stronger structural constraints, supporting assets and examples, more rigorous evaluation.
 
 ## Intent
 
@@ -20,7 +20,9 @@ Generate a concise one-pager document for an internal topic, initiative, or prop
 **Input:** A topic description with key facts, goals, and intended audience.
 **Output:** A one-pager with a defined structure, ready to share with stakeholders.
 
-## Hard Contracts
+## Constraints
+
+### MUST
 
 - Output MUST follow this structure, in order:
   1. **Title** — a short, descriptive heading.
@@ -31,11 +33,11 @@ Generate a concise one-pager document for an internal topic, initiative, or prop
 - Output MUST NOT include unverifiable claims.
 - All claims MUST be traceable to the provided input.
 
-## Soft Contracts
+### SHOULD
 
-- Prefer concise, direct writing.
-- Prefer plain language suitable for a non-specialist audience.
-- Use headers to guide visual scanning.
+- Output SHOULD use concise, direct writing.
+- Output SHOULD use plain language suitable for a non-specialist audience.
+- Output SHOULD use headers to guide visual scanning.
 
 ## Example Input
 
@@ -70,4 +72,4 @@ in tests; estimated cost reduction is 30%.
 - **Clarity (0–3):** Writing is concise and appropriate for a non-specialist audience.
 - **Completeness (0–2):** Sufficient detail for stakeholder decision-making.
 
-Pass threshold: 8/10 with no hard contract violations.
+Pass threshold: 8/10 with all MUST constraints satisfied.

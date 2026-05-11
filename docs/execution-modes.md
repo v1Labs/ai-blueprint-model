@@ -1,6 +1,6 @@
 # Execution Modes
 
-Blueprints are not just static documents — they are markdown-first contract packages designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (AIBM) blueprints.
+Blueprints are not just static documents — they are markdown-first blueprint packages designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (AIBM) blueprints.
 
 Understanding execution modes helps teams:
 - choose the right blueprint structure for their workflow
@@ -24,7 +24,7 @@ The blueprint is used as a reference or checklist by a human author. AI assistan
 | **Human involvement** | Full authorship |
 | **Ideal use cases** | Early drafts, exploratory work, low-stakes artifacts |
 
-In manual mode, blueprints function as **soft contracts**. Hard contracts exist but are checked informally by the author rather than evaluated programmatically.
+In manual mode, constraints guide the work informally. `MUST` constraints are checked by the author, while `SHOULD` and `MAY` guidance remains advisory.
 
 ---
 
@@ -34,9 +34,9 @@ AI generates a draft using the blueprint's structured prompt and constraints. A 
 
 | Property | Value |
 |---|---|
-| **Expected rigidity** | Medium — hard contracts must be satisfied; soft contracts guide generation |
+| **Expected rigidity** | Medium — `MUST` constraints must be satisfied; `SHOULD` guidance shapes generation |
 | **Validation expectations** | Structured checklist or rubric reviewed by a human |
-| **AI freedom level** | Constrained by hard contracts; soft contracts allow stylistic flexibility |
+| **AI freedom level** | Constrained by `MUST` constraints; `SHOULD` guidance allows stylistic flexibility |
 | **Human involvement** | Review and approval gate before delivery |
 | **Ideal use cases** | Content pipelines, regulated domains, repeatable team workflows |
 
@@ -46,11 +46,11 @@ Human-in-the-loop mode is the recommended default for most production blueprints
 
 ### Semi-automated
 
-AI generates output using the blueprint. Automated checks validate structural compliance (hard contracts). Human review is reserved for edge cases or escalations.
+AI generates output using the blueprint. Automated checks validate structural compliance (`MUST` constraints). Human review is reserved for edge cases or escalations.
 
 | Property | Value |
 |---|---|
-| **Expected rigidity** | High — hard contracts are machine-validated; soft contracts are scored |
+| **Expected rigidity** | High — `MUST` constraints are machine-validated; `SHOULD` constraints are scored |
 | **Validation expectations** | Automated schema/rubric checks pass before human escalation is triggered |
 | **AI freedom level** | Low to medium; prompt structure and evaluation criteria are enforced |
 | **Human involvement** | Exception handling only; routine outputs proceed without review |
@@ -66,7 +66,7 @@ Fully automated pipeline. AI generates, validates, and delivers output without h
 
 | Property | Value |
 |---|---|
-| **Expected rigidity** | Very high — both hard and soft contracts are enforced programmatically |
+| **Expected rigidity** | Very high — `MUST` constraints and evaluation thresholds are enforced programmatically |
 | **Validation expectations** | Automated evaluation against defined rubric; outputs are gated on pass/fail scores |
 | **AI freedom level** | Minimal; prompts are deterministic and heavily constrained |
 | **Human involvement** | Monitoring and incident response only |
@@ -76,24 +76,25 @@ Operational mode requires full blueprint specification at **AIBM-Operational** c
 
 ---
 
-## Contract Alignment by Mode
+## Constraint Alignment by Mode
 
-| Mode | Hard Contracts | Soft Contracts | Evaluation |
-|---|---|---|---|
-| Manual | Reference only | Aspirational | Informal |
-| Human-in-the-Loop | Enforced by reviewer | Recommended | Rubric-guided |
-| Semi-automated | Machine-validated | Scored | Automated + escalation |
-| Operational | Machine-validated, blocking | Scored, enforced | Fully automated, gated |
+| Mode | `MUST` Constraints | `SHOULD` Constraints | `MAY` Guidance | Evaluation |
+|---|---|---|---|---|
+| Manual | Checked informally | Advisory | Optional | Informal |
+| Human-in-the-Loop | Enforced by reviewer | Recommended | Optional | Rubric-guided |
+| Semi-automated | Machine-validated | Scored | Allowed when safely ignorable | Automated + escalation |
+| Operational | Machine-validated, blocking | Scored or policy-enforced | Rare; only when explicitly permitted | Fully automated, gated |
 
 ---
 
 ## Designed-for Workflows
 
-Blueprints should declare their intended execution mode in operational metadata. A blueprint designed for human-in-the-loop review should not be run in fully operational mode without explicit validation that its hard contracts and evaluation criteria are sufficient for automated gating.
+Blueprints should declare their intended execution mode in operational metadata. A blueprint designed for human-in-the-loop review should not be run in fully operational mode without explicit validation that its `MUST` constraints and evaluation criteria are sufficient for automated gating.
 
 Teams should treat execution mode as a **blueprint design constraint** — not just an operational choice made at runtime.
 
-### Soft contracts vs hard contracts in execution context
+### Normative constraints in execution context
 
-- **Soft contracts** are always advisory. Even in operational mode, soft contract scoring informs quality metrics but should not block delivery unless explicitly configured to do so.
-- **Hard contracts** are always enforced. In operational mode, a hard contract violation must trigger an escalation or halt the pipeline.
+- **`MUST`** constraints are always enforced. In operational mode, a `MUST` violation must trigger an escalation or halt the pipeline.
+- **`SHOULD`** constraints are recommended by default. In operational modes, they may be scored or policy-enforced when teams define that behavior explicitly.
+- **`MAY`** guidance is optional. It should never be treated as a compliance failure unless a blueprint promotes it to `SHOULD` or `MUST`.

@@ -17,10 +17,10 @@ These legacy single-document examples remain for quick learning and concept walk
 
 | Example | Suggested schema level | New concepts introduced |
 |---|---|---|
-| [`hello-world/`](hello-world/README.md) | `basic` | Blueprint structure, inputs, outputs, intent, minimal contracts |
+| [`hello-world/`](hello-world/README.md) | `basic` | Blueprint structure, inputs, outputs, intent, minimal constraints |
 | [`structured-summary/`](structured-summary/README.md) | `basic` | Output formatting, tone guidance, evaluation criteria, example outputs |
 | [`social-post/`](social-post/README.md) | `asset` | Multiple output variants, human review workflow, style consistency |
-| [`simple-one-pager/`](simple-one-pager/README.md) | `asset` | Layout-aware thinking, stronger contracts, supporting examples, rigorous evaluation |
+| [`simple-one-pager/`](simple-one-pager/README.md) | `asset` | Layout-aware thinking, stronger constraints, supporting examples, rigorous evaluation |
 
 Start with `hello-world` if you are new to blueprints. Each subsequent example builds on the previous one.
 

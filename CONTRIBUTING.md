@@ -15,7 +15,7 @@ Thanks for contributing to AIBM.
 When proposing changes, aim for:
 
 1. **Clarity over cleverness**
-2. **Explicit contracts over hidden assumptions**
+2. **Explicit constraints over hidden assumptions**
 3. **Extensible structure over rigid frameworks**
 4. **Stable conventions over ad hoc patterns**
 

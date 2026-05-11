@@ -11,17 +11,23 @@ intent:
 
 Describe the target artifact outcome and usage context.
 
-## Hard Contracts
+## Constraints
 
-- Required sections:
-- Required inputs:
-- Non-negotiable constraints:
+### MUST
 
-## Soft Contracts
+- The output MUST include these sections:
+- The output MUST use these inputs:
+- The output MUST satisfy these non-negotiable constraints:
 
-- Preferred tone:
-- Preferred level of depth:
-- Preferred ordering:
+### SHOULD
+
+- The output SHOULD use this tone:
+- The output SHOULD target this level of depth:
+- The output SHOULD follow this preferred ordering:
+
+### MAY
+
+- The output MAY include these optional enhancements:
 
 ## Components
 
