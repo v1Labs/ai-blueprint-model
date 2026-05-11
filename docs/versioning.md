@@ -2,7 +2,7 @@
 
 Blueprints are operational specifications. Like APIs and schemas, they evolve over time — and that evolution must be managed carefully to avoid breaking downstream workflows.
 
-This document defines semantic versioning conventions for AIBM blueprints.
+This document defines semantic versioning conventions for blueprints.
 
 ---
 
@@ -20,7 +20,7 @@ Treating blueprints as versioned specifications ensures:
 
 ## Versioning scheme
 
-AIBM blueprints use [Semantic Versioning](https://semver.org/) in the form `MAJOR.MINOR.PATCH`.
+Blueprints use [Semantic Versioning](https://semver.org/) in the form `MAJOR.MINOR.PATCH`.
 
 ```
 1.3.2

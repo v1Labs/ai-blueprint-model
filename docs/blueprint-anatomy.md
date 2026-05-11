@@ -67,7 +67,7 @@ Examples:
 - policy snippets
 - transformation rules
 
-**Optional** at AIBM-Lite. Recommended at AIBM-Standard and above.
+**Optional** at Lite. Recommended at Standard and above.
 
 ### 4) Examples
 Reference outputs, example inputs, and counter-examples.
@@ -77,7 +77,7 @@ Purpose:
 - show expected quality bar
 - improve model alignment
 
-**Required** at AIBM-Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
+**Required** at Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
 
 ### 5) Evaluations
 Explicit rubric for scoring artifact quality and validating whether the blueprint's constraints were met.
@@ -88,7 +88,7 @@ Typical dimensions:
 - usefulness for intended audience
 - clarity and actionability
 
-**Required** for all compliance levels. At AIBM-Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
+**Required** for all compliance levels. At the Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
 
 ### 6) Operational metadata
 Execution-facing context for workflows.
@@ -100,7 +100,7 @@ Examples:
 - review checkpoints
 - ownership and change log references
 
-**Required** at AIBM-Standard and above. At AIBM-Operational, inputs MUST be machine-readable.
+**Required** at Standard and above. At the Operational level, inputs MUST be machine-readable.
 
 ### 7) Workflow guidance
 Instructions for human-in-the-loop, semi-automated, or operational runs.
@@ -111,7 +111,7 @@ Examples:
 - approval gates
 - escalation rules
 
-**Required** at AIBM-Standard and above. SHOULD declare the intended execution mode explicitly.
+**Required** at Standard and above. SHOULD declare the intended execution mode explicitly.
 
 ### 8) Rendering assets
 Optional style/layout assets that define final presentation.
@@ -128,7 +128,7 @@ Examples:
 
 ## Required vs optional sections by compliance level
 
-| Section | AIBM-Lite | AIBM-Standard | AIBM-Operational |
+| Section | Lite | Standard | Operational |
 |---|---|---|---|
 | Intent | Required | Required | Required |
 | Constraints | Required | Required | Required |

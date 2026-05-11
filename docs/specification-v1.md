@@ -1,4 +1,4 @@
-# AIBM Specification v1 (Scaffold)
+# AI Blueprint Model Specification v1 (Scaffold)
 
 Status: Draft
 
@@ -14,13 +14,13 @@ Defines repository-native conventions for markdown-first blueprint packages and 
 
 ## Baseline requirements
 
-An AIBM-compliant blueprint **MUST** define:
+A compliant blueprint **MUST** define:
 1. intent metadata
 2. constraints expressed with normative language
 3. generation structure/components
 4. evaluation criteria
 
-An AIBM-compliant blueprint **SHOULD** define:
+A compliant blueprint **SHOULD** define:
 1. operational metadata
 2. workflow guidance
 3. one or more examples
@@ -41,9 +41,9 @@ Evaluations **SHOULD** validate whether the blueprint's stated constraints were 
 
 ## Compliance levels
 
-AIBM defines three progressive compliance levels. Teams may adopt the model incrementally, starting with AIBM-Lite and advancing toward AIBM-Operational as their workflows mature.
+This model defines three progressive compliance levels. Teams may adopt the model incrementally, starting with Lite and advancing toward Operational as their workflows mature.
 
-### AIBM-Lite
+### Lite
 
 The minimum viable blueprint. Suitable for manual and early human-in-the-loop workflows.
 
@@ -52,13 +52,13 @@ Required sections:
 - `constraints` — required, recommended, and optional guidance expressed with normative terms
 - `evaluation criteria` — rubric for assessing output quality
 
-AIBM-Lite blueprints are suitable for manual and lightly structured workflows. `MUST` constraints are typically enforced by human reviewers, while `SHOULD` and `MAY` guidance improves quality without over-constraining the work.
+Lite blueprints are suitable for manual and lightly structured workflows. `MUST` constraints are typically enforced by human reviewers, while `SHOULD` and `MAY` guidance improves quality without over-constraining the work.
 
 ---
 
-### AIBM-Standard
+### Standard
 
-Extends AIBM-Lite with structured operational context. Suitable for repeatable human-in-the-loop and semi-automated workflows.
+Extends Lite with structured operational context. Suitable for repeatable human-in-the-loop and semi-automated workflows.
 
 Adds:
 - `examples` — at least one positive example and, where useful, a counter-example
@@ -66,11 +66,11 @@ Adds:
 - `workflow metadata` — intended execution mode, escalation rules, approval gates
 - `structured outputs` — description of the expected output shape and format
 
-AIBM-Standard blueprints are **designed-for workflows**. They provide enough structure for teams to run repeatable processes without ambiguity about what a valid output looks like.
+Standard blueprints are **designed-for workflows**. They provide enough structure for teams to run repeatable processes without ambiguity about what a valid output looks like.
 
 ---
 
-### AIBM-Operational
+### Operational
 
 The full specification. Required for semi-automated and operational execution modes.
 
@@ -80,4 +80,4 @@ Adds:
 - `evaluation outputs` — structured scoring definitions with pass/fail thresholds
 - `automation compatibility` — explicit declarations of execution mode, version constraints, and pipeline integration requirements
 
-AIBM-Operational blueprints make `MUST` constraints machine-validated, score or review `SHOULD` guidance, and gate outputs on evaluation results.
+Operational blueprints make `MUST` constraints machine-validated, score or review `SHOULD` guidance, and gate outputs on evaluation results.

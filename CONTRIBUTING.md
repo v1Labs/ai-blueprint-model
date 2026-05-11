@@ -1,6 +1,6 @@
 # Contributing to AI Blueprint Model
 
-Thanks for contributing to AIBM.
+Thanks for contributing.
 
 ## Repository principles
 

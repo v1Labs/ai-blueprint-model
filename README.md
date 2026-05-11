@@ -1,6 +1,6 @@
 # AI Blueprint Model
 
-AIBM is a practical, repository-native model for creating repeatable AI blueprint packages.
+This is a practical, repository-native model for creating repeatable AI blueprint packages.
 
 ## Why blueprints?
 
