@@ -39,7 +39,6 @@ A blueprint can include:
 - A shared model and vocabulary for AI blueprint contracts
 - Specification scaffolding and normative guidance in `spec/`
 - Conceptual and operational docs in `docs/`
-- Canonical templates and reusable components in `blueprints/`
 - Realistic artifact examples in `examples/`
 - Optional machine-readable helpers in `schemas/`
 - Shared rendering/style assets in `assets/`
@@ -55,11 +54,10 @@ A blueprint can include:
 
 ```text
 /spec        # Specification scaffolding and normative guidance
-/examples    # Concrete, realistic blueprint examples
+/examples    # Concrete, realistic blueprint examples and starter templates
 /docs        # Conceptual and operational documentation
 /schemas     # Optional machine-readable schemas and validation helpers
 /assets      # Shared rendering/style assets used by blueprints
-/blueprints  # Canonical blueprint templates and reusable components
 ```
 
 ## Roadmap (v1)
@@ -72,6 +70,10 @@ A blueprint can include:
 - [x] Execution modes documentation
 - [x] Compliance levels (AIBM-Lite, AIBM-Standard, AIBM-Operational)
 - [ ] Additional domain examples
+
+## Blueprint libraries
+
+External blueprint libraries built on AIBM are listed in [`Blueprints.md`](Blueprints.md). Blueprint libraries are encouraged to live in separate repositories that reference the AIBM spec.
 
 ## Contributing
 
