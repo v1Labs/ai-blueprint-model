@@ -9,7 +9,7 @@ These examples follow the reusable schema model directly:
 | Example | Schema | Purpose |
 |---|---|---|
 | [`basic-blueprint/`](basic-blueprint/README.md) | `basic` | Smallest useful multi-file blueprint package |
-| [`asset-blueprint/`](asset-blueprint/README.md) | `asset` | Richer package with components, examples, and evaluations |
+| [`asset-blueprint/`](asset-blueprint/README.md) | `asset` | Richer package with separate content/style guidance, components, examples, and evaluations |
 
 ## Learning progression (single-document blueprints)
 
