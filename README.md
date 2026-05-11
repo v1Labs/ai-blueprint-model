@@ -6,8 +6,6 @@ In practice, prompts get copied around without context, quality standards live i
 
 AIBM is a practical, repository-native specification for solving that problem.
 
-It is **not** an agent framework. It is a blueprint system for designing, evaluating, versioning, and operationalizing AI-generated artifacts.
-
 ## Why blueprints?
 
 Prompts alone are useful, but they are not enough for repeatable team workflows. A prompt library usually stores text snippets; it does not reliably package the full contract needed to produce and review a specific artifact.
