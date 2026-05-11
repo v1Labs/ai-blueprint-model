@@ -10,11 +10,13 @@ Blueprint libraries are designed to live **independently** from the model repo. 
 
 Illustrative examples included in this repository, organized as a learning progression:
 
-- [`examples/hello-world/`](examples/hello-world/blueprint.md) — Smallest valid blueprint; introduces basic structure, inputs, outputs, and intent
-- [`examples/structured-summary/`](examples/structured-summary/blueprint.md) — Adds output formatting, tone guidance, evaluation criteria, and example outputs
-- [`examples/social-post/`](examples/social-post/blueprint.md) — Adds multiple output variants, human review workflow, and style consistency
-- [`examples/simple-one-pager/`](examples/simple-one-pager/blueprint.md) — Adds layout-aware thinking, stronger contracts, and more rigorous evaluation
-- [`examples/blueprint-template/blueprint.md`](examples/blueprint-template/blueprint.md) — Blank starter template for authoring new blueprints
+`README.md` is the canonical entry point for each example package in this repository.
+
+- [`examples/hello-world/`](examples/hello-world/README.md) — Smallest valid blueprint; introduces basic structure, inputs, outputs, and intent
+- [`examples/structured-summary/`](examples/structured-summary/README.md) — Adds output formatting, tone guidance, evaluation criteria, and example outputs
+- [`examples/social-post/`](examples/social-post/README.md) — Adds multiple output variants, human review workflow, and style consistency
+- [`examples/simple-one-pager/`](examples/simple-one-pager/README.md) — Adds layout-aware thinking, stronger contracts, and more rigorous evaluation
+- [`examples/blueprint-template/`](examples/blueprint-template/README.md) — Blank starter template for authoring new blueprints
 
 ## Advanced examples
 

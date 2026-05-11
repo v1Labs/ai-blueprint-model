@@ -11,22 +11,22 @@ These examples follow the reusable schema model directly:
 | [`basic-blueprint/`](basic-blueprint/README.md) | `basic` | Smallest useful multi-file blueprint package |
 | [`asset-blueprint/`](asset-blueprint/README.md) | `asset` | Richer package with components, examples, and evaluations |
 
-## Learning progression (single-file blueprints)
+## Learning progression (single-document blueprints)
 
-These legacy single-file examples remain for quick learning and concept walkthroughs:
+These legacy single-document examples remain for quick learning and concept walkthroughs:
 
 | Example | Suggested schema level | New concepts introduced |
 |---|---|---|
-| [`hello-world/`](hello-world/blueprint.md) | `basic` | Blueprint structure, inputs, outputs, intent, minimal contracts |
-| [`structured-summary/`](structured-summary/blueprint.md) | `basic` | Output formatting, tone guidance, evaluation criteria, example outputs |
-| [`social-post/`](social-post/blueprint.md) | `asset` | Multiple output variants, human review workflow, style consistency |
-| [`simple-one-pager/`](simple-one-pager/blueprint.md) | `asset` | Layout-aware thinking, stronger contracts, supporting examples, rigorous evaluation |
+| [`hello-world/`](hello-world/README.md) | `basic` | Blueprint structure, inputs, outputs, intent, minimal contracts |
+| [`structured-summary/`](structured-summary/README.md) | `basic` | Output formatting, tone guidance, evaluation criteria, example outputs |
+| [`social-post/`](social-post/README.md) | `asset` | Multiple output variants, human review workflow, style consistency |
+| [`simple-one-pager/`](simple-one-pager/README.md) | `asset` | Layout-aware thinking, stronger contracts, supporting examples, rigorous evaluation |
 
 Start with `hello-world` if you are new to blueprints. Each subsequent example builds on the previous one.
 
 ## Starter template
 
-- [`blueprint-template/blueprint.md`](blueprint-template/blueprint.md) — Blank starter template for authoring new blueprints.
+- [`blueprint-template/README.md`](blueprint-template/README.md) — Blank starter template for authoring new blueprints.
 
 ## Advanced examples
 
