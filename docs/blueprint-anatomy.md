@@ -188,3 +188,10 @@ Used in semi-automated or fully operational pipelines where human review is the 
 - AI freedom: minimal — prompts are deterministic, outputs are structurally constrained
 
 Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous MUST constraints, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
+
+## See also
+
+- [Execution Modes](execution-modes.md) for how anatomy choices map to workflow rigor.
+- [Specification v1](specification-v1.md) for baseline compliance requirements.
+- [Schemas](../schemas/README.md) for reusable package structures (`basic`, `asset`).
+- [Canonical blueprints](../blueprints/README.md) for schema-aligned package examples.

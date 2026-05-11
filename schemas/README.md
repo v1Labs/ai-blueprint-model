@@ -27,3 +27,5 @@ Each reusable schema package is defined through:
 - `examples/README.md` — guidance for how blueprint-local examples should be authored
 
 Artifact-specific schemas (for example one-pager/case-study/product-sheet schemas) are deprecated in favor of reusable structure schemas plus blueprint-specific intent files.
+
+See canonical schema-aligned blueprint packages in [`../blueprints/`](../blueprints/README.md), especially [`basic-blueprint/`](../blueprints/basic-blueprint/README.md) and [`asset-blueprint/`](../blueprints/asset-blueprint/README.md).

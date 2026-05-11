@@ -98,3 +98,9 @@ Teams should treat execution mode as a **blueprint design constraint** — not j
 - **`MUST`** constraints are always enforced. In operational mode, a `MUST` violation must trigger an escalation or halt the pipeline.
 - **`SHOULD`** constraints are recommended by default. In operational modes, they may be scored or policy-enforced when teams define that behavior explicitly.
 - **`MAY`** guidance is optional. It should never be treated as a compliance failure unless a blueprint promotes it to `SHOULD` or `MUST`.
+
+## See also
+
+- [Blueprint Anatomy](blueprint-anatomy.md) for section-level blueprint design.
+- [Specification v1](specification-v1.md) for compliance-level requirements.
+- [Asset blueprint example](../blueprints/asset-blueprint/README.md) for a richer operational package.
