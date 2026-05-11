@@ -1,6 +1,6 @@
-# Examples
+# Blueprints
 
-Blueprint examples organized as a learning progression.
+Concrete blueprint implementations and examples in this repository.
 
 ## Schema-aligned package examples
 
@@ -24,10 +24,12 @@ These legacy single-document examples remain for quick learning and concept walk
 
 Start with `hello-world` if you are new to blueprints. Each subsequent example builds on the previous one.
 
-## Starter template
+## Starter blueprint package
 
-- [`blueprint-template/README.md`](blueprint-template/README.md) — Blank starter template for authoring new blueprints.
+- [`blueprint-template/README.md`](blueprint-template/README.md) — Blank starter package for authoring new blueprints.
 
 ## Advanced examples
 
-More complex operational blueprints (such as full GTM one-pager workflows with human-in-the-loop review and multi-step pipeline orchestration) are maintained as external blueprint libraries and linked from [`Blueprints.md`](../Blueprints.md).
+- [`gtm-one-pager/`](gtm-one-pager/README.md) — Operational one-pager blueprint with workflow guidance and structured evaluation.
+
+For broader ecosystem discovery, see [`../Community.md`](../Community.md).
