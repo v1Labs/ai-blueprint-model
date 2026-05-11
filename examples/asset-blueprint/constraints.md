@@ -1,4 +1,6 @@
 # Constraints
 
-- preserve key message across variants
-- meet channel length limits
+## MUST
+
+- Output MUST preserve the key message across variants.
+- Output MUST meet channel length limits.

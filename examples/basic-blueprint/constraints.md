@@ -1,4 +1,6 @@
 # Constraints
 
-- keep output under 250 words
-- do not invent unsupported facts
+## MUST
+
+- Output MUST stay under 250 words.
+- Output MUST NOT invent unsupported facts.

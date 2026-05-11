@@ -20,7 +20,9 @@ Generate two social post drafts — one for LinkedIn and one for X — based on 
 **Input:** A brief description of an announcement, launch, or update.
 **Output:** Two labeled social post drafts: one LinkedIn-style and one X-style.
 
-## Hard Contracts
+## Constraints
+
+### MUST
 
 - Output MUST include two clearly labeled variants:
   - `[LinkedIn]` — 3–5 sentences, professional tone.
@@ -28,12 +30,15 @@ Generate two social post drafts — one for LinkedIn and one for X — based on 
 - Both variants MUST reflect the same core message.
 - Output MUST NOT include hashtags unless explicitly requested in the input.
 
-## Soft Contracts
+### SHOULD
 
-- Prefer active voice.
-- Prefer direct, confident language over hedging.
-- LinkedIn posts may include a call to action.
-- X posts should lead with the most compelling detail.
+- Output SHOULD use active voice.
+- Output SHOULD prefer direct, confident language over hedging.
+- The X post SHOULD lead with the most compelling detail.
+
+### MAY
+
+- The LinkedIn post MAY include a call to action.
 
 ## Example
 

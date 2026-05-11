@@ -13,7 +13,9 @@ intent:
 
 Generate a concise, evidence-backed GTM one-pager that aligns product, marketing, and sales on launch execution.
 
-## Hard Contracts
+## Constraints
+
+### MUST
 
 1. Output MUST include sections in this exact order:
    - Product Summary
@@ -26,11 +28,11 @@ Generate a concise, evidence-backed GTM one-pager that aligns product, marketing
 3. Output MUST not include unverifiable superlatives.
 4. Total length MUST be between 350 and 700 words.
 
-## Soft Contracts
+### SHOULD
 
-- Prefer direct, low-jargon language.
-- Prefer bullet lists for execution actions.
-- Prefer one primary message and up to three supporting points.
+- Output SHOULD use direct, low-jargon language.
+- Output SHOULD use bullet lists for execution actions.
+- Output SHOULD keep to one primary message and up to three supporting points.
 
 ## Components
 
@@ -81,7 +83,7 @@ Output: phased launch steps with owners
 - **Usefulness (0-3):** clear, actionable guidance for launch teams
 - **Clarity (0-3):** concise and unambiguous writing
 
-Pass threshold: 7/10 with no hard contract violations.
+Pass threshold: 7/10 with all MUST constraints satisfied.
 
 ## Operational Metadata
 

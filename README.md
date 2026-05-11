@@ -8,22 +8,22 @@ AIBM is a practical, repository-native specification for solving that problem.
 
 ## Why blueprints?
 
-Prompts alone are useful, but they are not enough for repeatable team workflows. A prompt library usually stores text snippets; it does not reliably package the full contract needed to produce and review a specific artifact.
+Prompts alone are useful, but they are not enough for repeatable team workflows. A prompt library usually stores text snippets; it does not reliably package the full set of constraints and review criteria needed to produce and review a specific artifact.
 
-A blueprint is a **portable contract package** for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, and it can include any files needed to define the contract end-to-end.
+A blueprint is a **portable blueprint package** for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, and it can include any files needed to define expectations end-to-end.
 
 Blueprints improve:
 - **Repeatability**: the same inputs and constraints can produce consistently shaped outputs
 - **Reviewability**: requirements and quality criteria are explicit and inspectable in git
-- **Portability**: teams can move the full contract across tools, repos, and environments
-- **Iteration**: contracts, examples, and validation criteria can be versioned and improved over time
+- **Portability**: teams can move the full blueprint package across tools, repos, and environments
+- **Iteration**: constraints, examples, and validation criteria can be versioned and improved over time
 
 ## What a blueprint is
 
-A blueprint is a portable contract package for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, but it may include supporting files needed to define the contract end-to-end.
+A blueprint is a portable blueprint package for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, but it may include supporting files needed to define expectations end-to-end.
 
 A blueprint can include:
-- intent contracts
+- intent definition
 - design and structure rules
 - component definitions
 - example inputs, example outputs, and counter-examples
@@ -41,9 +41,19 @@ Schemas define reusable structure (file layout, required/optional files, allowed
 
 Blueprints define generation intent (purpose, inputs, outputs, constraints, examples, components, evaluations, and QA guidance for a specific artifact workflow).
 
+## Normative language
+
+AIBM uses normative language to make blueprint constraints easy to read and evaluate:
+
+- **MUST**: required for compliance
+- **SHOULD**: recommended unless justified otherwise
+- **MAY**: optional
+
+Constraints define generation expectations. Evaluations validate whether those expectations were met.
+
 ## What this repo provides
 
-- A shared model and vocabulary for AI blueprint contracts
+- A shared model and vocabulary for AI blueprint constraints
 - Normative model specification in `spec/`
 - Explanatory documentation and guidance in `docs/`
 - Starter blueprint structures in `templates/` (see `examples/blueprint-template/` in this repo)

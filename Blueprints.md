@@ -15,7 +15,7 @@ Illustrative examples included in this repository, organized as a learning progr
 - [`examples/hello-world/`](examples/hello-world/README.md) — Smallest valid blueprint; introduces basic structure, inputs, outputs, and intent
 - [`examples/structured-summary/`](examples/structured-summary/README.md) — Adds output formatting, tone guidance, evaluation criteria, and example outputs
 - [`examples/social-post/`](examples/social-post/README.md) — Adds multiple output variants, human review workflow, and style consistency
-- [`examples/simple-one-pager/`](examples/simple-one-pager/README.md) — Adds layout-aware thinking, stronger contracts, and more rigorous evaluation
+- [`examples/simple-one-pager/`](examples/simple-one-pager/README.md) — Adds layout-aware thinking, stronger constraints, and more rigorous evaluation
 - [`examples/blueprint-template/`](examples/blueprint-template/README.md) — Blank starter template for authoring new blueprints
 
 ## Advanced examples

@@ -11,9 +11,9 @@ intent:
 
 The smallest possible valid blueprint. It takes a name as input and produces a one-sentence greeting as output.
 
-This example is intentionally minimal. It introduces the core blueprint concepts — intent, inputs, outputs, contracts, and evaluation — without adding operational complexity.
+This example is intentionally minimal. It introduces the core blueprint concepts — intent, inputs, outputs, constraints, and evaluation — without adding operational complexity.
 
-**Concepts introduced:** blueprint structure, inputs, outputs, intent, minimal contract definition.
+**Concepts introduced:** blueprint structure, inputs, outputs, intent, minimal constraint definition.
 
 ## Intent
 
@@ -22,16 +22,18 @@ Generate a warm, single-sentence greeting addressed to a specific person.
 **Input:** A person's name.
 **Output:** A one-sentence greeting that addresses that person by name.
 
-## Hard Contracts
+## Constraints
+
+### MUST
 
 - Output MUST be a single sentence.
 - Output MUST address the person by the provided name.
 - Output MUST be friendly in tone.
 
-## Soft Contracts
+### SHOULD
 
-- Prefer warm, welcoming language.
-- Avoid formal or corporate phrasing.
+- Output SHOULD use warm, welcoming language.
+- Output SHOULD avoid formal or corporate phrasing.
 
 ## Example
 

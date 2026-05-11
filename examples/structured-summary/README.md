@@ -20,7 +20,9 @@ Generate a structured summary of a provided source text.
 **Input:** A block of text (article, document, or excerpt).
 **Output:** A formatted summary with a headline, key points, and a closing sentence.
 
-## Hard Contracts
+## Constraints
+
+### MUST
 
 - Output MUST include, in order:
   1. A one-line headline summarizing the core message.
@@ -28,11 +30,11 @@ Generate a structured summary of a provided source text.
   3. A single closing sentence.
 - Output MUST NOT introduce facts not present in the source text.
 
-## Soft Contracts
+### SHOULD
 
-- Prefer neutral, informational tone.
-- Prefer plain language over technical jargon.
-- Order key points from most to least important.
+- Output SHOULD use a neutral, informational tone.
+- Output SHOULD prefer plain language over technical jargon.
+- Output SHOULD order key points from most to least important.
 
 ## Example
 

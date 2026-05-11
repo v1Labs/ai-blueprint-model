@@ -1,6 +1,6 @@
 # Blueprint Versioning
 
-Blueprints are operational contracts. Like APIs and schemas, they evolve over time — and that evolution must be managed carefully to avoid breaking downstream workflows.
+Blueprints are operational specifications. Like APIs and schemas, they evolve over time — and that evolution must be managed carefully to avoid breaking downstream workflows.
 
 This document defines semantic versioning conventions for AIBM blueprints.
 
@@ -8,9 +8,9 @@ This document defines semantic versioning conventions for AIBM blueprints.
 
 ## Why versioning matters
 
-Blueprints are used by teams, tools, and automated pipelines. A change that seems minor (updating required inputs, reordering hard contracts, tightening evaluation criteria) can break existing implementations or invalidate previously approved outputs.
+Blueprints are used by teams, tools, and automated pipelines. A change that seems minor (updating required inputs, reordering `MUST` constraints, tightening evaluation criteria) can break existing implementations or invalidate previously approved outputs.
 
-Treating blueprints as versioned contracts ensures:
+Treating blueprints as versioned specifications ensures:
 - teams know when a blueprint change is safe to adopt automatically
 - automation pipelines can gate on compatible versions
 - downstream consumers are not silently broken by upstream changes
@@ -44,7 +44,7 @@ Examples:
 
 A patch release **MUST NOT**:
 - change required inputs
-- change hard contract rules
+- change `MUST` constraints
 - alter evaluation criteria in ways that affect scoring
 - modify output structure expectations
 
@@ -56,7 +56,7 @@ A patch release **MUST NOT**:
 
 Examples:
 - additive optional fields in operational metadata
-- new soft contract recommendations
+- new `SHOULD` recommendations
 - additional examples (positive or counter)
 - expanded workflow guidance for new execution modes
 - compatible improvements to evaluation criteria (additive dimensions only)
@@ -64,7 +64,7 @@ Examples:
 
 A minor release **MUST NOT**:
 - change or remove existing required inputs
-- alter existing hard contracts
+- alter existing `MUST` constraints
 - change expected output structure in breaking ways
 - invalidate outputs that were previously compliant
 
@@ -77,7 +77,7 @@ A minor release **MUST NOT**:
 Examples:
 - changed required inputs (new fields required, existing fields removed or renamed)
 - changed output structure expectations
-- changed hard contracts (tightened, loosened, or restructured)
+- changed constraints (tightened, loosened, or restructured)
 - changed evaluation criteria in ways that affect pass/fail outcomes
 - breaking changes to operational metadata structure
 - removal of components, sections, or workflow guidance that downstream systems depend on
@@ -112,8 +112,8 @@ Consumers and automation pipelines SHOULD reference the specific version they de
 | Wording and clarification | ✓ | | |
 | Additive optional fields | | ✓ | |
 | New examples | | ✓ | |
-| New soft contracts | | ✓ | |
-| Changed hard contracts | | | ✓ |
+| New `SHOULD` recommendations | | ✓ | |
+| Changed `MUST` constraints | | | ✓ |
 | Changed required inputs | | | ✓ |
 | Changed output structure | | | ✓ |
 | Changed evaluation pass/fail criteria | | | ✓ |

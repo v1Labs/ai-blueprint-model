@@ -1,8 +1,8 @@
 # Blueprint Anatomy
 
-A blueprint is a portable, markdown-first contract package for generating a specific artifact type.
+A blueprint is a portable, markdown-first blueprint package for generating a specific artifact type.
 
-Markdown remains the primary authoring and coordination layer, but blueprints may include supporting files such as schemas, example inputs, reference outputs, templates, code, images, design assets, test data, and related documentation when needed for contract clarity.
+Markdown remains the primary authoring and coordination layer, but blueprints may include supporting files such as schemas, example inputs, reference outputs, templates, code, images, design assets, test data, and related documentation when needed for constraint clarity.
 
 ## Core sections
 
@@ -17,10 +17,10 @@ Typical fields:
 
 **Required** for all compliance levels. Without a clear intent, a blueprint cannot be evaluated.
 
-### 2) Contracts
-Rules that govern what is allowed, required, or forbidden.
+### 2) Constraints
+Rules that govern what is required, recommended, or optional during generation. Constraints should use normative language so authors and AI systems can tell what is rigid versus flexible.
 
-#### Hard contracts
+#### MUST
 Non-negotiable requirements. Violations should fail evaluation.
 
 Examples:
@@ -34,10 +34,8 @@ Why they exist:
 - guarantee minimum structural quality
 - support deterministic validation
 
-**Required** for all compliance levels.
-
-#### Soft contracts
-Strong preferences that improve usefulness but allow controlled flexibility.
+#### SHOULD
+Strong recommendations that improve usefulness but allow justified exceptions.
 
 Examples:
 - tone guidance
@@ -50,7 +48,15 @@ Why they exist:
 - improve quality without over-constraining generation
 - support human judgment in review loops
 
-**Required** for all compliance levels.
+#### MAY
+Optional behaviors or additions that teams can include when useful.
+
+Examples:
+- extra implementation notes
+- optional call to action
+- supplementary formatting hints
+
+**Required** for all compliance levels: every blueprint MUST define its constraints, and those constraints SHOULD be expressed with normative language.
 
 ### 3) Components
 Reusable building blocks used across blueprints.
@@ -74,7 +80,7 @@ Purpose:
 **Required** at AIBM-Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
 
 ### 5) Evaluations
-Explicit rubric for scoring artifact quality.
+Explicit rubric for scoring artifact quality and validating whether the blueprint's constraints were met.
 
 Typical dimensions:
 - structural compliance
@@ -125,8 +131,7 @@ Examples:
 | Section | AIBM-Lite | AIBM-Standard | AIBM-Operational |
 |---|---|---|---|
 | Intent | Required | Required | Required |
-| Hard contracts | Required | Required | Required |
-| Soft contracts | Required | Required | Required |
+| Constraints | Required | Required | Required |
 | Components | Optional | Recommended | Recommended |
 | Examples | Optional | Required | Required |
 | Evaluations | Required | Required | Required (structured) |
@@ -140,8 +145,7 @@ Examples:
 
 A practical baseline blueprint should include:
 - intent
-- hard contracts
-- soft contracts
+- constraints
 - componentized structure
 - at least one example
 - evaluation rubric
@@ -149,16 +153,17 @@ A practical baseline blueprint should include:
 
 ---
 
-## Contract Strictness
+## Constraint Rigidity
 
-The appropriate level of contract rigidity depends on execution context and operational risk.
+The appropriate level of constraint rigidity depends on execution context and operational risk.
 
 ### Exploratory blueprints
 
 Used in manual or early-stage workflows where the primary goal is to guide human thinking.
 
-- Hard contracts: few, focused on essential structure only
-- Soft contracts: broad stylistic preferences
+- MUST constraints: few, focused on essential structure only
+- SHOULD constraints: broad stylistic guidance
+- MAY constraints: optional additions where they help the author
 - Evaluation: informal; human judgment is the primary gate
 - AI freedom: high — the blueprint is a scaffold, not a fence
 
@@ -166,18 +171,20 @@ Used in manual or early-stage workflows where the primary goal is to guide human
 
 Used in human-in-the-loop workflows where AI generates a draft that a human reviews and approves.
 
-- Hard contracts: clearly defined, enforced by human review
-- Soft contracts: specific enough to guide consistent output across reviewers
+- MUST constraints: clearly defined, enforced by human review
+- SHOULD constraints: specific enough to guide consistent output across reviewers
+- MAY constraints: used for optional enhancements that do not affect compliance
 - Evaluation: structured rubric with defined criteria per dimension
-- AI freedom: medium — constrained by hard contracts, guided by soft contracts
+- AI freedom: medium — constrained by MUST requirements and guided by SHOULD recommendations
 
 ### Operational automation systems
 
 Used in semi-automated or fully operational pipelines where human review is the exception, not the rule.
 
-- Hard contracts: machine-validated, blocking on failure
-- Soft contracts: scored automatically; thresholds configurable
+- MUST constraints: machine-validated, blocking on failure
+- SHOULD constraints: scored automatically; thresholds configurable
+- MAY constraints: used only when automation can safely ignore them
 - Evaluation: automated, gated — outputs cannot proceed unless evaluation passes
 - AI freedom: minimal — prompts are deterministic, outputs are structurally constrained
 
-Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous hard contracts, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
+Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous MUST constraints, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
