@@ -22,17 +22,17 @@ Blueprints improve:
 
 ## What a blueprint is
 
-A blueprint is a markdown-first package of instructions and constraints used to produce a target artifact reliably.
+A blueprint is a portable contract package for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, but it may include supporting files needed to define the contract end-to-end.
 
 A blueprint can include:
 - intent contracts
 - design and structure rules
 - component definitions
-- examples and counter-examples
+- example inputs, example outputs, and counter-examples
 - evaluation criteria
 - workflow and handoff guidance
 - rendering assets and formatting policies
-- schemas, templates, code, or other supporting files when needed
+- schemas, templates, code, images, design assets, test data, or other supporting files when needed
 
 ## What this repo provides
 

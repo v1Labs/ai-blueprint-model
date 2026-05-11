@@ -1,6 +1,8 @@
 # Blueprint Anatomy
 
-A blueprint is a structured contract for generating a specific artifact type.
+A blueprint is a portable, markdown-first contract package for generating a specific artifact type.
+
+Markdown remains the primary authoring and coordination layer, but blueprints may include supporting files such as schemas, example inputs, reference outputs, templates, code, images, design assets, test data, and related documentation when needed for contract clarity.
 
 ## Core sections
 
@@ -62,7 +64,7 @@ Examples:
 **Optional** at AIBM-Lite. Recommended at AIBM-Standard and above.
 
 ### 4) Examples
-Reference outputs and counter-examples.
+Reference outputs, example inputs, and counter-examples.
 
 Purpose:
 - reduce ambiguity
@@ -179,4 +181,3 @@ Used in semi-automated or fully operational pipelines where human review is the 
 - AI freedom: minimal — prompts are deterministic, outputs are structurally constrained
 
 Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous hard contracts, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
-
