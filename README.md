@@ -27,7 +27,7 @@ README.md        # Project introduction and navigation
 Community.md     # Community discovery: libraries, blueprints, schemas
 /docs            # Long-form guidance and model documentation
 /schemas         # Reusable blueprint structure schemas
-/blueprints      # Concrete blueprint implementations and examples
+/blueprints      # Learning blueprints, schema-aligned packages, and starter packages
 ```
 
 ## What this repo provides

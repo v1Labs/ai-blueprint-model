@@ -24,7 +24,7 @@ These legacy single-document examples remain for quick learning and concept walk
 
 Start with `hello-world` if you are new to blueprints. Each subsequent example builds on the previous one.
 
-## Starter blueprint package
+## Starter blueprint packages
 
 - [`blueprint-template/README.md`](blueprint-template/README.md) — Blank starter package for authoring new blueprints.
 

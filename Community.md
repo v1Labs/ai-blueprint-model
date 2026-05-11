@@ -4,7 +4,7 @@ Community resources and ecosystem directories for AIBM.
 
 ## Libraries
 
-- **AssetMule blueprints**: <https://github.com/assetmule> (platform-oriented blueprint libraries)
+- **AssetMule blueprints**: Coming soon.
 - _Community libraries_: No community libraries listed yet. [Open a PR](CONTRIBUTING.md) to add yours.
 - _Experimental libraries_: No experimental libraries listed yet.
 
