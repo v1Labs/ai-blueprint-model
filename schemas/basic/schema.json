@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://REPLACE-ME.example.com/aibm/schemas/basic/schema.json",
+  "title": "AIBM Basic Blueprint Structure",
+  "description": "Reusable minimal file and section shape for blueprint packages.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["required_files", "optional_files", "markdown_sections"],
+  "properties": {
+    "required_files": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["README.md", "inputs.md", "outputs.md", "constraints.md"]
+      },
+      "uniqueItems": true,
+      "minItems": 4
+    },
+    "optional_files": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["evaluations.md"]
+      },
+      "uniqueItems": true
+    },
+    "markdown_sections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["README.md"],
+      "properties": {
+        "README.md": {
+          "type": "array",
+          "description": "Allowed top-level sections in README.md",
+          "items": {
+            "type": "string",
+            "enum": ["Purpose", "Inputs", "Outputs", "Constraints", "Evaluations"]
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      }
+    }
+  }
+}

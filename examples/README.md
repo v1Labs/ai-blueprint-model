@@ -1,15 +1,26 @@
 # Examples
 
-Blueprint examples organized as a learning progression. Each example introduces a small number of new concepts, starting from the simplest possible blueprint and building toward more sophisticated artifact generation.
+Blueprint examples organized as a learning progression.
 
-## Learning progression
+## Schema-aligned package examples
 
-| Example | New concepts introduced |
-|---|---|
-| [`hello-world/`](hello-world/blueprint.md) | Blueprint structure, inputs, outputs, intent, minimal contracts |
-| [`structured-summary/`](structured-summary/blueprint.md) | Output formatting, tone guidance, evaluation criteria, example outputs |
-| [`social-post/`](social-post/blueprint.md) | Multiple output variants, human review workflow, style consistency |
-| [`simple-one-pager/`](simple-one-pager/blueprint.md) | Layout-aware thinking, stronger contracts, supporting examples, rigorous evaluation |
+These examples follow the reusable schema model directly:
+
+| Example | Schema | Purpose |
+|---|---|---|
+| [`basic-blueprint/`](basic-blueprint/README.md) | `basic` | Smallest useful multi-file blueprint package |
+| [`asset-blueprint/`](asset-blueprint/README.md) | `asset` | Richer package with components, examples, and evaluations |
+
+## Learning progression (single-file blueprints)
+
+These legacy single-file examples remain for quick learning and concept walkthroughs:
+
+| Example | Suggested schema level | New concepts introduced |
+|---|---|---|
+| [`hello-world/`](hello-world/blueprint.md) | `basic` | Blueprint structure, inputs, outputs, intent, minimal contracts |
+| [`structured-summary/`](structured-summary/blueprint.md) | `basic` | Output formatting, tone guidance, evaluation criteria, example outputs |
+| [`social-post/`](social-post/blueprint.md) | `asset` | Multiple output variants, human review workflow, style consistency |
+| [`simple-one-pager/`](simple-one-pager/blueprint.md) | `asset` | Layout-aware thinking, stronger contracts, supporting examples, rigorous evaluation |
 
 Start with `hello-world` if you are new to blueprints. Each subsequent example builds on the previous one.
 

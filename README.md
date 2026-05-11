@@ -32,6 +32,15 @@ A blueprint can include:
 - rendering assets and formatting policies
 - schemas, templates, code, images, design assets, test data, or other supporting files when needed
 
+## Schemas vs blueprints
+
+> A schema defines how a blueprint is structured.
+> A blueprint defines what an AI system should create.
+
+Schemas define reusable structure (file layout, required/optional files, allowed sections, metadata validation, reusable shapes such as `basic` and `asset`).
+
+Blueprints define generation intent (purpose, inputs, outputs, constraints, examples, components, evaluations, and QA guidance for a specific artifact workflow).
+
 ## What this repo provides
 
 - A shared model and vocabulary for AI blueprint contracts
@@ -39,7 +48,7 @@ A blueprint can include:
 - Explanatory documentation and guidance in `docs/`
 - Starter blueprint structures in `templates/` (see `examples/blueprint-template/` in this repo)
 - Illustrative examples in `examples/` (not a canonical production blueprint library)
-- Optional machine-readable helpers in `schemas/`
+- Reusable blueprint-structure schemas and validation helpers in `schemas/`
 - Shared rendering/style assets in `assets/`
 
 ## Example use cases
@@ -56,9 +65,9 @@ A blueprint can include:
 /spec         # Normative model specification
 /docs         # Explanatory documentation and guidance
 /templates    # Starter blueprint structures (starter template currently in /examples/blueprint-template/)
-/examples     # Illustrative examples only, not canonical production blueprint libraries
+/examples     # Illustrative examples, including schema-aligned package examples
 /Blueprints.md # Directory/index of external blueprint libraries and examples
-/schemas      # Optional machine-readable schemas and validation helpers
+/schemas      # Reusable blueprint structure schemas (basic, asset) and validation helpers
 /assets       # Shared rendering/style assets used by blueprints
 ```
 
@@ -76,12 +85,10 @@ A blueprint can include:
 
 ## Examples
 
-The `examples/` directory contains a progression of minimal examples, each introducing a small number of new blueprint concepts:
+The `examples/` directory contains:
 
-1. [`examples/hello-world/`](examples/hello-world/blueprint.md) — The smallest valid blueprint.
-2. [`examples/structured-summary/`](examples/structured-summary/blueprint.md) — Adds output formatting, tone guidance, and evaluation.
-3. [`examples/social-post/`](examples/social-post/blueprint.md) — Adds multiple output variants and a human review step.
-4. [`examples/simple-one-pager/`](examples/simple-one-pager/blueprint.md) — Adds stronger contracts and more rigorous evaluation.
+1. Schema-aligned package examples (`basic-blueprint`, `asset-blueprint`) that show reusable structure in practice.
+2. A progression of single-file learning examples (`hello-world` → `simple-one-pager`) for concept onboarding.
 
 Start with `hello-world` if you are new to blueprints. Advanced and operational blueprint examples are listed in [`Blueprints.md`](Blueprints.md).
 
