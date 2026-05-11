@@ -1,6 +1,6 @@
 # Community
 
-Community resources and ecosystem directories for AIBM.
+Community resources and ecosystem directories for the AI Blueprint Model.
 
 ## Libraries
 
