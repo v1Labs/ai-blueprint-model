@@ -11,7 +11,7 @@ intent:
 
 Demonstrates how blueprints can shape output quality, formatting, and tone without becoming complex operational systems.
 
-**Concepts introduced:** output formatting, tone and style guidance, evaluation criteria, example outputs.
+**Concepts introduced:** output formatting, tone and style guidance, example outputs.
 
 ## Intent
 
@@ -52,12 +52,3 @@ Generate a structured summary of a provided source text.
 > - Early adopters report fewer support tickets since the rollout.
 >
 > The new API delivers measurable time savings and improved developer experience for early users.
-
-## Evaluation
-
-- **Completeness (0–2):** All required output sections present (headline, bullets, closing sentence).
-- **Accuracy (0–3):** No facts introduced beyond the source text.
-- **Clarity (0–3):** Key points are concise and easy to read.
-- **Tone (0–2):** Neutral and appropriately plain.
-
-Pass threshold: 8/10.

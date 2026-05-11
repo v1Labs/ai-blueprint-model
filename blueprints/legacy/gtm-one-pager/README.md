@@ -76,15 +76,6 @@ Output: phased launch steps with owners
 ### Success Metrics
 ...
 
-## Evaluation Rubric
-
-- **Structure (0-2):** all required sections present and ordered
-- **Grounding (0-2):** claims supported by input packet
-- **Usefulness (0-3):** clear, actionable guidance for launch teams
-- **Clarity (0-3):** concise and unambiguous writing
-
-Pass threshold: 7/10 with all MUST constraints satisfied.
-
 ## Operational Metadata
 
 - Workflow mode: human-in-the-loop
@@ -95,9 +86,8 @@ Pass threshold: 7/10 with all MUST constraints satisfied.
 
 1. Validate input packet completeness.
 2. Generate draft one-pager.
-3. Score against rubric.
-4. Route to reviewers.
-5. Apply revisions and publish final.
+3. Route to reviewers.
+4. Apply revisions and publish final.
 
 ## Rendering Assets
 

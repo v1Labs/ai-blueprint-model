@@ -27,6 +27,6 @@ Examples should help authors, reviewers, and AI systems understand:
 
 ## Relationship between examples and constraints
 
-Examples should reinforce `constraints.md`, `content.md`, `style.md`, and `evaluations.md`.
+Examples should reinforce `constraints.md`, `content.md`, and `style.md`.
 
 Actual examples belong in individual blueprint packages. This schema package only documents how those examples should be authored.

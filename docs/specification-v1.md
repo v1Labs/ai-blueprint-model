@@ -4,7 +4,7 @@ Status: Draft
 
 ## Scope
 
-Defines repository-native conventions for markdown-first blueprint packages and evaluation-ready artifact generation.
+Defines repository-native conventions for markdown-first blueprint packages and artifact generation.
 
 ## Normative terms
 
@@ -18,14 +18,11 @@ A compliant blueprint **MUST** define:
 1. intent metadata
 2. constraints expressed with normative language
 3. generation structure/components
-4. evaluation criteria
 
 A compliant blueprint **SHOULD** define:
 1. operational metadata
 2. workflow guidance
 3. one or more examples
-
-Evaluations **SHOULD** validate whether the blueprint's stated constraints were met.
 
 ## File conventions
 
@@ -50,7 +47,6 @@ The minimum viable blueprint. Suitable for manual and early human-in-the-loop wo
 Required sections:
 - `intent` — artifact type, audience, objective, success criteria
 - `constraints` — required, recommended, and optional guidance expressed with normative terms
-- `evaluation criteria` — rubric for assessing output quality
 
 Lite blueprints are suitable for manual and lightly structured workflows. `MUST` constraints are typically enforced by human reviewers, while `SHOULD` and `MAY` guidance improves quality without over-constraining the work.
 
@@ -77,7 +73,6 @@ The full specification. Required for semi-automated and operational execution mo
 Adds:
 - `machine-readable inputs` — structured input definitions consumable by automation
 - `validation schemas` — JSON Schema or equivalent artifacts for automated constraint enforcement
-- `evaluation outputs` — structured scoring definitions with pass/fail thresholds
 - `automation compatibility` — explicit declarations of execution mode, version constraints, and pipeline integration requirements
 
-Operational blueprints make `MUST` constraints machine-validated, score or review `SHOULD` guidance, and gate outputs on evaluation results.
+Operational blueprints make `MUST` constraints machine-validated and gate outputs on structured checks.

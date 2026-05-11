@@ -10,7 +10,7 @@ Use `asset` when a blueprint needs a clearer separation between:
 - what content should be communicated
 - how the artifact should look and feel
 
-This schema is a good fit for presentations, social assets, one-pagers, product sheets, and other artifact-generation workflows that need examples, reusable components, and explicit review criteria.
+This schema is a good fit for presentations, social assets, one-pagers, product sheets, and other artifact-generation workflows that need examples, reusable components, and separate content/style authoring guidance.
 
 ## Required files
 
@@ -21,7 +21,6 @@ This schema is a good fit for presentations, social assets, one-pagers, product 
 - `content.md`
 - `style.md`
 - `components.md`
-- `evaluations.md`
 
 ## Required directories
 
@@ -40,7 +39,6 @@ asset/
     content.md
     style.md
     components.md
-    evaluations.md
   examples/
     README.md
 ```
@@ -54,7 +52,6 @@ asset/
 - `content.md` explains how content should be sourced, grounded, and generated when information is missing.
 - `style.md` explains the visual, tonal, and brand direction for the artifact.
 - `components.md` defines reusable building blocks that connect content and style into repeatable patterns.
-- `evaluations.md` defines how to review the finished artifact against the blueprint's intent and rules.
 - `examples/` contains blueprint-local examples; this schema package's own `examples/README.md` documents how those examples should be organized.
 
 ## Authoring philosophy
@@ -75,7 +72,6 @@ my-asset-blueprint/
   content.md
   style.md
   components.md
-  evaluations.md
   examples/
     README.md
     example-1.md
@@ -83,4 +79,4 @@ my-asset-blueprint/
 
 ## Scope
 
-Use `asset` when the blueprint needs reusable components, concrete examples, explicit evaluation guidance, and separate content/style authoring guidance.
+Use `asset` when the blueprint needs reusable components, concrete examples, and separate content/style authoring guidance.

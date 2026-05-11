@@ -16,4 +16,4 @@ The `examples/` guidance for the `basic` schema explains how blueprint-local exa
 
 ## Relationship to the schema
 
-Examples are optional for `basic`, but when present they should reinforce the blueprint's `outputs.md`, `constraints.md`, and `evaluations.md` rather than introduce a separate contract.
+Examples are optional for `basic`, but when present they should reinforce the blueprint's `outputs.md` and `constraints.md` rather than introduce a separate contract.

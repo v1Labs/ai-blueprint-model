@@ -19,4 +19,4 @@ Purpose: Show how `content.md` and `style.md` combine into channel-specific vari
 
 - aligns with `constraints.md` claim-safety rules
 - preserves terminology and CTA consistency from `style.md`
-- meets tone fit requirements from `evaluations.md`
+- meets tone fit guidance from `style.md`

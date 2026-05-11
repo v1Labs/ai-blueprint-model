@@ -6,7 +6,7 @@ This is a practical, repository-native model for building repeatable AI blueprin
 
 Prompt-only systems are useful for one-off tasks, but they break down when teams need repeatability, reviewability, and operational handoffs.
 
-Blueprints package intent, constraints, examples, evaluation criteria, and supporting artifacts so humans and automation systems can run the same workflow consistently.
+Blueprints package intent, constraints, examples, and supporting artifacts so humans and automation systems can run the same workflow consistently.
 
 Blueprints improve:
 - **Repeatability**
@@ -20,9 +20,9 @@ Blueprints improve:
 - A **blueprint** defines what an AI system should create.
 
 Schemas define reusable structure (`basic`, `asset`).
-Blueprints define artifact intent (inputs, outputs, constraints, examples, and evaluations).
+Blueprints define artifact intent (inputs, outputs, constraints, and examples).
 
-Blueprints are markdown-first, but not markdown-only. A blueprint package may include reference assets such as PNG, PDF, SVG, JSON, CSV, datasets, diagrams, screenshots, fixtures, and sample outputs when they improve generation quality or evaluation clarity.
+Blueprints are markdown-first, but not markdown-only. A blueprint package may include reference assets such as PNG, PDF, SVG, JSON, CSV, datasets, diagrams, screenshots, fixtures, and sample outputs when they improve generation quality or output clarity.
 
 ## Repository map
 

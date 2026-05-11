@@ -9,9 +9,9 @@ intent:
 
 # Simple One-Pager Blueprint
 
-Demonstrates layout-aware generation, stronger structural constraints, supporting examples, and a more rigorous evaluation rubric — while remaining intentionally smaller than a full operational blueprint.
+Demonstrates layout-aware generation, stronger structural constraints, and supporting examples — while remaining intentionally smaller than a full operational blueprint.
 
-**Concepts introduced:** layout-aware thinking, stronger structural constraints, supporting assets and examples, more rigorous evaluation.
+**Concepts introduced:** layout-aware thinking, stronger structural constraints, supporting assets and examples.
 
 ## Intent
 
@@ -64,12 +64,3 @@ in tests; estimated cost reduction is 30%.
 >
 > **What's Needed**
 > Engineering leadership approval to begin a phased migration starting with non-critical pipelines. The team estimates 2–3 sprints to complete the full transition. We will document progress, monitor build times and failure rates throughout, and report results after the first phase. No additional budget is required beyond existing CI spend, as the new provider's costs fall within current allocation.
-
-## Evaluation
-
-- **Structure (0–2):** All four required sections present and in the correct order.
-- **Grounding (0–3):** Claims supported by provided inputs; no unverifiable assertions.
-- **Clarity (0–3):** Writing is concise and appropriate for a non-specialist audience.
-- **Completeness (0–2):** Sufficient detail for stakeholder decision-making.
-
-Pass threshold: 8/10 with all MUST constraints satisfied.

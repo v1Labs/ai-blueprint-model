@@ -54,15 +54,6 @@ Generate two social post drafts — one for LinkedIn and one for X — based on 
 > **[X]**
 > Our API is now public. Build integrations without a partnership agreement. Ship faster.
 
-## Evaluation
-
-- **Variant completeness (required):** Both `[LinkedIn]` and `[X]` variants present.
-- **Character limit (required):** X variant is under 280 characters.
-- **Message consistency (0–2):** Both variants reflect the same core idea.
-- **Tone fit (0–2):** Each variant matches its platform's style.
-
-Pass threshold: Both required checks pass, plus 3/4 on scored criteria.
-
 ## Workflow
 
 1. Generate both variants from the provided input.

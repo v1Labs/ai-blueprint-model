@@ -15,13 +15,13 @@ Typical fields:
 - decision/use context
 - success criteria
 
-**Required** for all compliance levels. Without a clear intent, a blueprint cannot be evaluated.
+**Required** for all compliance levels. Without a clear intent, a blueprint cannot be assessed.
 
 ### 2) Constraints
 Rules that govern what is required, recommended, or optional during generation. Constraints should use normative language so authors and AI systems can tell what is rigid versus flexible.
 
 #### MUST
-Non-negotiable requirements. Violations should fail evaluation.
+Non-negotiable requirements. Violations represent a structural failure of the blueprint's contract.
 
 Examples:
 - required sections
@@ -79,18 +79,7 @@ Purpose:
 
 **Required** at Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
 
-### 5) Evaluations
-Explicit rubric for scoring artifact quality and validating whether the blueprint's constraints were met.
-
-Typical dimensions:
-- structural compliance
-- factual grounding
-- usefulness for intended audience
-- clarity and actionability
-
-**Required** for all compliance levels. At the Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
-
-### 6) Operational metadata
+### 5) Operational metadata
 Execution-facing context for workflows.
 
 Examples:
@@ -102,7 +91,7 @@ Examples:
 
 **Required** at Standard and above. At the Operational level, inputs MUST be machine-readable.
 
-### 7) Workflow guidance
+### 6) Workflow guidance
 Instructions for human-in-the-loop, semi-automated, or operational runs.
 
 Examples:
@@ -113,7 +102,7 @@ Examples:
 
 **Required** at Standard and above. SHOULD declare the intended execution mode explicitly.
 
-### 8) Rendering assets
+### 7) Rendering assets
 Optional style/layout assets that define final presentation.
 
 Examples:
@@ -134,7 +123,6 @@ Examples:
 | Constraints | Required | Required | Required |
 | Components | Optional | Recommended | Recommended |
 | Examples | Optional | Required | Required |
-| Evaluations | Required | Required | Required (structured) |
 | Operational metadata | Optional | Required | Required (machine-readable) |
 | Workflow guidance | Optional | Required | Required |
 | Rendering assets | Optional | Optional | Optional |
@@ -148,7 +136,6 @@ A practical baseline blueprint should include:
 - constraints
 - componentized structure
 - at least one example
-- evaluation rubric
 - operational metadata
 
 ---
@@ -164,7 +151,6 @@ Used in manual or early-stage workflows where the primary goal is to guide human
 - MUST constraints: few, focused on essential structure only
 - SHOULD constraints: broad stylistic guidance
 - MAY constraints: optional additions where they help the author
-- Evaluation: informal; human judgment is the primary gate
 - AI freedom: high — the blueprint is a scaffold, not a fence
 
 ### Assisted workflows
@@ -174,7 +160,6 @@ Used in human-in-the-loop workflows where AI generates a draft that a human revi
 - MUST constraints: clearly defined, enforced by human review
 - SHOULD constraints: specific enough to guide consistent output across reviewers
 - MAY constraints: used for optional enhancements that do not affect compliance
-- Evaluation: structured rubric with defined criteria per dimension
 - AI freedom: medium — constrained by MUST requirements and guided by SHOULD recommendations
 
 ### Operational automation systems
@@ -184,10 +169,9 @@ Used in semi-automated or fully operational pipelines where human review is the 
 - MUST constraints: machine-validated, blocking on failure
 - SHOULD constraints: scored automatically; thresholds configurable
 - MAY constraints: used only when automation can safely ignore them
-- Evaluation: automated, gated — outputs cannot proceed unless evaluation passes
 - AI freedom: minimal — prompts are deterministic, outputs are structurally constrained
 
-Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous MUST constraints, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
+Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous MUST constraints, underspecified output schemas, or missing machine-readable inputs are not acceptable at this level.
 
 ## See also
 

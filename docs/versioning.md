@@ -8,7 +8,7 @@ This document defines semantic versioning conventions for blueprints.
 
 ## Why versioning matters
 
-Blueprints are used by teams, tools, and automated pipelines. A change that seems minor (updating required inputs, reordering `MUST` constraints, tightening evaluation criteria) can break existing implementations or invalidate previously approved outputs.
+Blueprints are used by teams, tools, and automated pipelines. A change that seems minor (updating required inputs, reordering `MUST` constraints, tightening constraint definitions) can break existing implementations or invalidate previously approved outputs.
 
 Treating blueprints as versioned specifications ensures:
 - teams know when a blueprint change is safe to adopt automatically
@@ -45,7 +45,7 @@ Examples:
 A patch release **MUST NOT**:
 - change required inputs
 - change `MUST` constraints
-- alter evaluation criteria in ways that affect scoring
+- alter constraint definitions in ways that affect pass/fail outcomes
 - modify output structure expectations
 
 ---
@@ -59,7 +59,7 @@ Examples:
 - new `SHOULD` recommendations
 - additional examples (positive or counter)
 - expanded workflow guidance for new execution modes
-- compatible improvements to evaluation criteria (additive dimensions only)
+- compatible improvements to constraint or guidance definitions (additive only)
 - new optional components or rendering assets
 
 A minor release **MUST NOT**:
@@ -78,7 +78,7 @@ Examples:
 - changed required inputs (new fields required, existing fields removed or renamed)
 - changed output structure expectations
 - changed constraints (tightened, loosened, or restructured)
-- changed evaluation criteria in ways that affect pass/fail outcomes
+- changed constraint definitions in ways that affect pass/fail outcomes
 - breaking changes to operational metadata structure
 - removal of components, sections, or workflow guidance that downstream systems depend on
 
@@ -116,7 +116,7 @@ Consumers and automation pipelines SHOULD reference the specific version they de
 | Changed `MUST` constraints | | | ✓ |
 | Changed required inputs | | | ✓ |
 | Changed output structure | | | ✓ |
-| Changed evaluation pass/fail criteria | | | ✓ |
+| Changed constraint pass/fail criteria | | | ✓ |
 
 ---
 

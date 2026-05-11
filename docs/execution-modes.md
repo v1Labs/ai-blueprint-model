@@ -52,11 +52,11 @@ AI generates output using the blueprint. Automated checks validate structural co
 |---|---|
 | **Expected rigidity** | High — `MUST` constraints are machine-validated; `SHOULD` constraints are scored |
 | **Validation expectations** | Automated schema/rubric checks pass before human escalation is triggered |
-| **AI freedom level** | Low to medium; prompt structure and evaluation criteria are enforced |
+| **AI freedom level** | Low to medium; prompt structure and output constraints are enforced |
 | **Human involvement** | Exception handling only; routine outputs proceed without review |
 | **Ideal use cases** | High-volume artifact generation, internal tooling, documented operational flows |
 
-Semi-automated mode requires that blueprints define machine-readable inputs, structured evaluation criteria, and clear escalation rules.
+Semi-automated mode requires that blueprints define machine-readable inputs, structured output schemas, and clear escalation rules.
 
 ---
 
@@ -66,30 +66,30 @@ Fully automated pipeline. AI generates, validates, and delivers output without h
 
 | Property | Value |
 |---|---|
-| **Expected rigidity** | Very high — `MUST` constraints and evaluation thresholds are enforced programmatically |
-| **Validation expectations** | Automated evaluation against defined rubric; outputs are gated on pass/fail scores |
+| **Expected rigidity** | Very high — `MUST` constraints are enforced programmatically |
+| **Validation expectations** | Automated structural and constraint checks; outputs are gated on pass/fail results |
 | **AI freedom level** | Minimal; prompts are deterministic and heavily constrained |
 | **Human involvement** | Monitoring and incident response only |
 | **Ideal use cases** | Scheduled artifact generation, API-driven workflows, mature automation systems |
 
-Operational mode requires full blueprint specification at the **Operational** compliance level. Blueprints must define machine-readable inputs, structured output schemas, and evaluation scoring thresholds.
+Operational mode requires full blueprint specification at the **Operational** compliance level. Blueprints must define machine-readable inputs and structured output schemas.
 
 ---
 
 ## Constraint Alignment by Mode
 
-| Mode | `MUST` Constraints | `SHOULD` Constraints | `MAY` Guidance | Evaluation |
-|---|---|---|---|---|
-| Manual | Checked informally | Advisory | Optional | Informal |
-| Human-in-the-Loop | Enforced by reviewer | Recommended | Optional | Rubric-guided |
-| Semi-automated | Machine-validated | Scored | Allowed when safely ignorable | Automated + escalation |
-| Operational | Machine-validated, blocking | Scored or policy-enforced | Rare; only when explicitly permitted | Fully automated, gated |
+| Mode | `MUST` Constraints | `SHOULD` Constraints | `MAY` Guidance |
+|---|---|---|---|
+| Manual | Checked informally | Advisory | Optional |
+| Human-in-the-Loop | Enforced by reviewer | Recommended | Optional |
+| Semi-automated | Machine-validated | Scored | Allowed when safely ignorable |
+| Operational | Machine-validated, blocking | Scored or policy-enforced | Rare; only when explicitly permitted |
 
 ---
 
 ## Designed-for Workflows
 
-Blueprints should declare their intended execution mode in operational metadata. A blueprint designed for human-in-the-loop review should not be run in fully operational mode without explicit validation that its `MUST` constraints and evaluation criteria are sufficient for automated gating.
+Blueprints should declare their intended execution mode in operational metadata. A blueprint designed for human-in-the-loop review should not be run in fully operational mode without explicit validation that its `MUST` constraints and output schemas are sufficient for automated gating.
 
 Teams should treat execution mode as a **blueprint design constraint** — not just an operational choice made at runtime.
 
