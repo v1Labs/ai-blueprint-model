@@ -58,7 +58,7 @@ A blueprint can include:
 /docs         # Explanatory documentation and guidance
 /templates    # Starter blueprint structures (starter template currently in /examples/blueprint-template/)
 /examples     # Illustrative examples only, not canonical production blueprint libraries
-/Blueprints.md# Directory/index of external blueprint libraries and examples
+/Blueprints.md # Directory/index of external blueprint libraries and examples
 /schemas      # Optional machine-readable schemas and validation helpers
 /assets       # Shared rendering/style assets used by blueprints
 ```
