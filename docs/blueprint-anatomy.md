@@ -59,7 +59,7 @@ Examples:
 - policy snippets
 - transformation rules
 
-**Optional** at ABM-Lite. Recommended at ABM-Standard and above.
+**Optional** at AIBM-Lite. Recommended at AIBM-Standard and above.
 
 ### 4) Examples
 Reference outputs and counter-examples.
@@ -69,7 +69,7 @@ Purpose:
 - show expected quality bar
 - improve model alignment
 
-**Required** at ABM-Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
+**Required** at AIBM-Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
 
 ### 5) Evaluations
 Explicit rubric for scoring artifact quality.
@@ -80,7 +80,7 @@ Typical dimensions:
 - usefulness for intended audience
 - clarity and actionability
 
-**Required** for all compliance levels. At ABM-Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
+**Required** for all compliance levels. At AIBM-Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
 
 ### 6) Operational metadata
 Execution-facing context for workflows.
@@ -92,7 +92,7 @@ Examples:
 - review checkpoints
 - ownership and change log references
 
-**Required** at ABM-Standard and above. At ABM-Operational, inputs MUST be machine-readable.
+**Required** at AIBM-Standard and above. At AIBM-Operational, inputs MUST be machine-readable.
 
 ### 7) Workflow guidance
 Instructions for human-in-the-loop, semi-automated, or operational runs.
@@ -103,7 +103,7 @@ Examples:
 - approval gates
 - escalation rules
 
-**Required** at ABM-Standard and above. SHOULD declare the intended execution mode explicitly.
+**Required** at AIBM-Standard and above. SHOULD declare the intended execution mode explicitly.
 
 ### 8) Rendering assets
 Optional style/layout assets that define final presentation.
@@ -120,7 +120,7 @@ Examples:
 
 ## Required vs optional sections by compliance level
 
-| Section | ABM-Lite | ABM-Standard | ABM-Operational |
+| Section | AIBM-Lite | AIBM-Standard | AIBM-Operational |
 |---|---|---|---|
 | Intent | Required | Required | Required |
 | Hard contracts | Required | Required | Required |
