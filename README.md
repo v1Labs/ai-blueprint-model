@@ -1,4 +1,4 @@
-# AI Blueprint Model (AIBM)
+# AI Blueprint Model
 
 AI teams can generate impressive outputs quickly, but they often cannot run the same workflow twice with consistent quality.
 
