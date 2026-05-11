@@ -31,6 +31,8 @@ Describe the target artifact outcome and usage context.
 ## Examples
 
 - Positive example(s)
+- Example input(s)
+- Reference output(s)
 - Counter-example(s)
 
 ## Evaluation
@@ -54,3 +56,11 @@ Describe the target artifact outcome and usage context.
 
 - Template references
 - Formatting hints
+
+## Supporting Files (Optional)
+
+- Input schema reference(s)
+- Example input/output file path(s)
+- Code/template helper path(s)
+- Image/design asset path(s)
+- Test data and evaluation rubric asset(s)

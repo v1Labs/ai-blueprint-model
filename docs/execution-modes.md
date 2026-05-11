@@ -1,6 +1,6 @@
 # Execution Modes
 
-Blueprints are not just static documents — they are operational contracts designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (AIBM) blueprints.
+Blueprints are not just static documents — they are markdown-first contract packages designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (AIBM) blueprints.
 
 Understanding execution modes helps teams:
 - choose the right blueprint structure for their workflow
