@@ -1,6 +1,6 @@
 # Execution Modes
 
-Blueprints are not just static documents — they are operational contracts designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (ABM) blueprints.
+Blueprints are not just static documents — they are operational contracts designed to be executed in specific workflows. This document defines the intended execution modes for AI Blueprint Model (AIBM) blueprints.
 
 Understanding execution modes helps teams:
 - choose the right blueprint structure for their workflow
@@ -72,7 +72,7 @@ Fully automated pipeline. AI generates, validates, and delivers output without h
 | **Human involvement** | Monitoring and incident response only |
 | **Ideal use cases** | Scheduled artifact generation, API-driven workflows, mature automation systems |
 
-Operational mode requires full blueprint specification at **ABM-Operational** compliance level. Blueprints must define machine-readable inputs, structured output schemas, and evaluation scoring thresholds.
+Operational mode requires full blueprint specification at **AIBM-Operational** compliance level. Blueprints must define machine-readable inputs, structured output schemas, and evaluation scoring thresholds.
 
 ---
 

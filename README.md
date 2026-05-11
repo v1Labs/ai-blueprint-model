@@ -1,8 +1,8 @@
-# AI Blueprint Model (ABM)
+# AI Blueprint Model (AIBM)
 
 A repository-native specification for designing, evaluating, versioning, and operationalizing AI-generated artifacts.
 
-ABM is not an agent framework. It is a blueprint system for structured AI outputs and workflows.
+AIBM is not an agent framework. It is a blueprint system for structured AI outputs and workflows.
 
 ## Why this exists
 
@@ -12,7 +12,7 @@ Most AI output quality problems are specification problems:
 - quality criteria are implicit
 - workflows are hard to reproduce
 
-ABM defines blueprints as explicit, composable contracts that make AI work:
+AIBM defines blueprints as explicit, composable contracts that make AI work:
 - reproducible
 - inspectable
 - versionable
@@ -57,7 +57,7 @@ A blueprint can include:
 - [x] Schema refinement and validation conventions
 - [x] Versioning and compatibility guidance
 - [x] Execution modes documentation
-- [x] Compliance levels (ABM-Lite, ABM-Standard, ABM-Operational)
+- [x] Compliance levels (AIBM-Lite, AIBM-Standard, AIBM-Operational)
 - [ ] Additional domain examples
 
 ## Contributing

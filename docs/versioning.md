@@ -2,7 +2,7 @@
 
 Blueprints are operational contracts. Like APIs and schemas, they evolve over time — and that evolution must be managed carefully to avoid breaking downstream workflows.
 
-This document defines semantic versioning conventions for ABM blueprints.
+This document defines semantic versioning conventions for AIBM blueprints.
 
 ---
 
@@ -20,7 +20,7 @@ Treating blueprints as versioned contracts ensures:
 
 ## Versioning scheme
 
-ABM blueprints use [Semantic Versioning](https://semver.org/) in the form `MAJOR.MINOR.PATCH`.
+AIBM blueprints use [Semantic Versioning](https://semver.org/) in the form `MAJOR.MINOR.PATCH`.
 
 ```
 1.3.2

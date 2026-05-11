@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://REPLACE-ME.example.com/abm/schemas/blueprint-metadata.schema.json",
-  "title": "ABM Blueprint Metadata",
+  "$id": "https://REPLACE-ME.example.com/aibm/schemas/blueprint-metadata.schema.json",
+  "title": "AIBM Blueprint Metadata",
   "type": "object",
   "additionalProperties": true,
   "required": ["id", "version", "artifact_type", "intent"],

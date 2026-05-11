@@ -20,7 +20,7 @@ The current schema covers blueprint front matter / metadata. It intentionally do
 
 ## Future schema categories
 
-As the ABM tooling ecosystem matures, additional schema categories are planned:
+As the AIBM tooling ecosystem matures, additional schema categories are planned:
 
 ### Input schemas
 Machine-readable definitions of the structured inputs a blueprint requires before generation can begin. Used by automation pipelines to validate that required context is present.
