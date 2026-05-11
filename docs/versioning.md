@@ -127,3 +127,9 @@ Blueprints with versions below `1.0.0` (e.g., `0.1.0`, `0.3.2`) are considered e
 Once a blueprint reaches `1.0.0`, full semantic versioning applies with the Major/Minor/Patch rules defined above.
 
 Teams SHOULD NOT depend on pre-release blueprints in operational or semi-automated execution modes without explicit acknowledgment of instability.
+
+## See also
+
+- [Specification v1](specification-v1.md) for baseline compatibility expectations.
+- [Schemas](../schemas/README.md) for reusable structure definitions and schema evolution context.
+- [Canonical blueprint examples](../blueprints/README.md) for versioned package references.

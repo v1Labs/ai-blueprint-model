@@ -12,14 +12,10 @@ Community resources and ecosystem directories for the AI Blueprint Model.
 
 Blueprint implementations in this repository:
 
-- [`blueprints/hello-world/`](blueprints/hello-world/README.md)
-- [`blueprints/structured-summary/`](blueprints/structured-summary/README.md)
-- [`blueprints/social-post/`](blueprints/social-post/README.md)
-- [`blueprints/simple-one-pager/`](blueprints/simple-one-pager/README.md)
 - [`blueprints/basic-blueprint/`](blueprints/basic-blueprint/README.md)
 - [`blueprints/asset-blueprint/`](blueprints/asset-blueprint/README.md)
-- [`blueprints/gtm-one-pager/`](blueprints/gtm-one-pager/README.md)
 - [`blueprints/blueprint-template/`](blueprints/blueprint-template/README.md)
+- [`blueprints/legacy/`](blueprints/legacy/README.md)
 
 ## Schemas
 

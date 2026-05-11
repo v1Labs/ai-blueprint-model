@@ -1,10 +1,12 @@
 # AI Blueprint Model
 
-This is a practical, repository-native model for creating repeatable AI blueprint packages.
+This is a practical, repository-native model for building repeatable AI blueprint packages.
 
 ## Why blueprints?
 
-Prompts alone are useful, but they do not reliably package the constraints, examples, and review criteria needed for repeatable team workflows.
+Prompt-only systems are useful for one-off tasks, but they break down when teams need repeatability, reviewability, and operational handoffs.
+
+Blueprints package intent, constraints, examples, evaluation criteria, and supporting artifacts so humans and automation systems can run the same workflow consistently.
 
 Blueprints improve:
 - **Repeatability**
@@ -19,6 +21,8 @@ Blueprints improve:
 
 Schemas define reusable structure (`basic`, `asset`).
 Blueprints define artifact intent (inputs, outputs, constraints, examples, and evaluations).
+
+Blueprints are markdown-first, but not markdown-only. A blueprint package may include reference assets such as PNG, PDF, SVG, JSON, CSV, datasets, diagrams, screenshots, fixtures, and sample outputs when they improve generation quality or evaluation clarity.
 
 ## Repository map
 
@@ -37,12 +41,22 @@ Community.md     # Community discovery: libraries, blueprints, schemas
 - Self-contained blueprint packages in `blueprints/`
 - Community discovery links in `Community.md`
 
+## Canonical blueprint examples
+
+The canonical schema-aligned references in this repository are:
+
+- `blueprints/basic-blueprint/`
+- `blueprints/asset-blueprint/`
+
+Legacy single-document examples are in `blueprints/legacy/`.
+
 ## Getting started
 
-1. Read `docs/specification-v1.md`
-2. Read `docs/blueprint-anatomy.md`
-3. Start with `blueprints/hello-world/README.md`
-4. Explore reusable schema-aligned packages in `blueprints/basic-blueprint/` and `blueprints/asset-blueprint/`
+1. Start with `blueprints/basic-blueprint/README.md`
+2. Continue to `blueprints/asset-blueprint/README.md`
+3. Read `docs/blueprint-anatomy.md`
+4. Read `docs/execution-modes.md`
+5. Read `docs/specification-v1.md`
 
 ## Contributing
 
@@ -50,9 +64,10 @@ If you care about practical, composable AI specification systems, contributions 
 
 Start with:
 - `CONTRIBUTING.md`
-- `docs/specification-v1.md`
 - `docs/blueprint-anatomy.md`
-- `blueprints/hello-world/README.md`
+- `docs/specification-v1.md`
+- `blueprints/basic-blueprint/README.md`
+- `blueprints/asset-blueprint/README.md`
 
 ## License
 
