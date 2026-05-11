@@ -13,6 +13,8 @@ Typical fields:
 - decision/use context
 - success criteria
 
+**Required** for all compliance levels. Without a clear intent, a blueprint cannot be evaluated.
+
 ### 2) Contracts
 Rules that govern what is allowed, required, or forbidden.
 
@@ -30,6 +32,8 @@ Why they exist:
 - guarantee minimum structural quality
 - support deterministic validation
 
+**Required** for all compliance levels.
+
 #### Soft contracts
 Strong preferences that improve usefulness but allow controlled flexibility.
 
@@ -44,6 +48,8 @@ Why they exist:
 - improve quality without over-constraining generation
 - support human judgment in review loops
 
+**Required** for all compliance levels.
+
 ### 3) Components
 Reusable building blocks used across blueprints.
 
@@ -53,6 +59,8 @@ Examples:
 - policy snippets
 - transformation rules
 
+**Optional** at ABM-Lite. Recommended at ABM-Standard and above.
+
 ### 4) Examples
 Reference outputs and counter-examples.
 
@@ -60,6 +68,8 @@ Purpose:
 - reduce ambiguity
 - show expected quality bar
 - improve model alignment
+
+**Required** at ABM-Standard and above. At least one positive example SHOULD be included. Counter-examples are recommended wherever common failure modes exist.
 
 ### 5) Evaluations
 Explicit rubric for scoring artifact quality.
@@ -69,6 +79,8 @@ Typical dimensions:
 - factual grounding
 - usefulness for intended audience
 - clarity and actionability
+
+**Required** for all compliance levels. At ABM-Operational level, evaluation criteria MUST include structured pass/fail thresholds that automation can enforce.
 
 ### 6) Operational metadata
 Execution-facing context for workflows.
@@ -80,6 +92,8 @@ Examples:
 - review checkpoints
 - ownership and change log references
 
+**Required** at ABM-Standard and above. At ABM-Operational, inputs MUST be machine-readable.
+
 ### 7) Workflow guidance
 Instructions for human-in-the-loop, semi-automated, or operational runs.
 
@@ -89,6 +103,8 @@ Examples:
 - approval gates
 - escalation rules
 
+**Required** at ABM-Standard and above. SHOULD declare the intended execution mode explicitly.
+
 ### 8) Rendering assets
 Optional style/layout assets that define final presentation.
 
@@ -97,6 +113,26 @@ Examples:
 - table formats
 - tokenized visual styles
 - export hints
+
+**Optional** at all levels. Recommended when output formatting is critical to usability.
+
+---
+
+## Required vs optional sections by compliance level
+
+| Section | ABM-Lite | ABM-Standard | ABM-Operational |
+|---|---|---|---|
+| Intent | Required | Required | Required |
+| Hard contracts | Required | Required | Required |
+| Soft contracts | Required | Required | Required |
+| Components | Optional | Recommended | Recommended |
+| Examples | Optional | Required | Required |
+| Evaluations | Required | Required | Required (structured) |
+| Operational metadata | Optional | Required | Required (machine-readable) |
+| Workflow guidance | Optional | Required | Required |
+| Rendering assets | Optional | Optional | Optional |
+
+---
 
 ## Minimal blueprint shape
 
@@ -108,3 +144,39 @@ A practical baseline blueprint should include:
 - at least one example
 - evaluation rubric
 - operational metadata
+
+---
+
+## Contract Strictness
+
+The appropriate level of contract rigidity depends on execution context and operational risk.
+
+### Exploratory blueprints
+
+Used in manual or early-stage workflows where the primary goal is to guide human thinking.
+
+- Hard contracts: few, focused on essential structure only
+- Soft contracts: broad stylistic preferences
+- Evaluation: informal; human judgment is the primary gate
+- AI freedom: high — the blueprint is a scaffold, not a fence
+
+### Assisted workflows
+
+Used in human-in-the-loop workflows where AI generates a draft that a human reviews and approves.
+
+- Hard contracts: clearly defined, enforced by human review
+- Soft contracts: specific enough to guide consistent output across reviewers
+- Evaluation: structured rubric with defined criteria per dimension
+- AI freedom: medium — constrained by hard contracts, guided by soft contracts
+
+### Operational automation systems
+
+Used in semi-automated or fully operational pipelines where human review is the exception, not the rule.
+
+- Hard contracts: machine-validated, blocking on failure
+- Soft contracts: scored automatically; thresholds configurable
+- Evaluation: automated, gated — outputs cannot proceed unless evaluation passes
+- AI freedom: minimal — prompts are deterministic, outputs are structurally constrained
+
+Blueprints designed for operational automation **MUST** be held to a higher standard of precision. Ambiguous hard contracts, underspecified evaluation criteria, or missing machine-readable inputs are not acceptable at this level.
+

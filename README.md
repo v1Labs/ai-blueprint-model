@@ -54,9 +54,11 @@ A blueprint can include:
 - [x] Repository bootstrap and structure
 - [x] Blueprint anatomy documentation
 - [x] Minimal example blueprint
-- [ ] Schema refinement and validation conventions
+- [x] Schema refinement and validation conventions
+- [x] Versioning and compatibility guidance
+- [x] Execution modes documentation
+- [x] Compliance levels (ABM-Lite, ABM-Standard, ABM-Operational)
 - [ ] Additional domain examples
-- [ ] Versioning and compatibility guidance
 
 ## Contributing
 
