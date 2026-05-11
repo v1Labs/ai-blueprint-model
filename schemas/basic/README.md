@@ -15,10 +15,6 @@ Use `basic` when a blueprint needs a small, readable package with explicit input
 - `outputs.md`
 - `constraints.md`
 
-## Optional files
-
-- `evaluations.md`
-
 ## Schema package structure
 
 ```text
@@ -29,7 +25,6 @@ basic/
     inputs.md
     outputs.md
     constraints.md
-    evaluations.md
   examples/
     README.md
 ```
@@ -40,7 +35,6 @@ basic/
 - `inputs.md` defines the source information the blueprint expects.
 - `outputs.md` defines the artifact shape the blueprint should produce.
 - `constraints.md` defines the hard and soft rules the generator must follow.
-- `evaluations.md`, when present, turns those rules into a review rubric.
 
 ## Authoring philosophy
 
@@ -57,7 +51,6 @@ my-blueprint/
   inputs.md
   outputs.md
   constraints.md
-  evaluations.md              # optional
 ```
 
 The `basic` schema is intentionally minimal. It does not require:

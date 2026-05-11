@@ -8,4 +8,4 @@ Typical files can include:
 - screenshots and component references
 - sample outputs used for review calibration
 
-Assets are guidance artifacts and should stay aligned with `constraints.md` and `evaluations.md`.
+Assets are guidance artifacts and should stay aligned with `constraints.md`.

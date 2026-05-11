@@ -41,12 +41,6 @@ Describe the target artifact outcome and usage context.
 - Reference output(s)
 - Counter-example(s)
 
-## Evaluation
-
-- Structural compliance
-- Utility for audience
-- Clarity/actionability
-
 ## Operational Metadata
 
 - Inputs required
@@ -69,4 +63,4 @@ Describe the target artifact outcome and usage context.
 - Example input/output file path(s)
 - Code/template helper path(s)
 - Image/design asset path(s)
-- Test data and evaluation rubric asset(s)
+- Test data asset(s)

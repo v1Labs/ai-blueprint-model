@@ -11,7 +11,7 @@ intent:
 
 The smallest possible valid blueprint. It takes a name as input and produces a one-sentence greeting as output.
 
-This example is intentionally minimal. It introduces the core blueprint concepts — intent, inputs, outputs, constraints, and evaluation — without adding operational complexity.
+This example is intentionally minimal. It introduces the core blueprint concepts — intent, inputs, outputs, and constraints — without adding operational complexity.
 
 **Concepts introduced:** blueprint structure, inputs, outputs, intent, minimal constraint definition.
 
@@ -40,9 +40,3 @@ Generate a warm, single-sentence greeting addressed to a specific person.
 **Input:** `name: Alice`
 
 **Output:** `Hello, Alice — glad you're here!`
-
-## Evaluation
-
-- Does the output address the person by name? (required)
-- Is the output a single sentence? (required)
-- Does it feel genuinely friendly? (preferred)
