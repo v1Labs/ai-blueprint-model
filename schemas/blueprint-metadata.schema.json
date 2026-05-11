@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/abm/schemas/blueprint.schema.json",
+  "$id": "https://REPLACE-ME.example.com/abm/schemas/blueprint-metadata.schema.json",
   "title": "ABM Blueprint Metadata",
   "type": "object",
   "additionalProperties": true,
