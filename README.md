@@ -1,22 +1,24 @@
 # AI Blueprint Model (AIBM)
 
-A repository-native specification for designing, evaluating, versioning, and operationalizing AI-generated artifacts.
+AI teams can generate impressive outputs quickly, but they often cannot run the same workflow twice with consistent quality.
 
-AIBM is not an agent framework. It is a blueprint system for structured AI outputs and workflows.
+In practice, prompts get copied around without context, quality standards live in someone’s head, examples drift over time, and generated artifacts become hard to review and approve consistently.
 
-## Why this exists
+AIBM is a practical, repository-native specification for solving that problem.
 
-Most AI output quality problems are specification problems:
-- intent is underspecified
-- structure is inconsistent
-- quality criteria are implicit
-- workflows are hard to reproduce
+It is **not** an agent framework. It is a blueprint system for designing, evaluating, versioning, and operationalizing AI-generated artifacts.
 
-AIBM defines blueprints as explicit, composable contracts that make AI work:
-- reproducible
-- inspectable
-- versionable
-- operational
+## Why blueprints?
+
+Prompts alone are useful, but they are not enough for repeatable team workflows. A prompt library usually stores text snippets; it does not reliably package the full contract needed to produce and review a specific artifact.
+
+A blueprint is a **portable contract package** for generating a specific AI-assisted artifact or workflow. It is markdown-first for readability, and it can include any files needed to define the contract end-to-end.
+
+Blueprints improve:
+- **Repeatability**: the same inputs and constraints can produce consistently shaped outputs
+- **Reviewability**: requirements and quality criteria are explicit and inspectable in git
+- **Portability**: teams can move the full contract across tools, repos, and environments
+- **Iteration**: contracts, examples, and validation criteria can be versioned and improved over time
 
 ## What a blueprint is
 
@@ -30,6 +32,17 @@ A blueprint can include:
 - evaluation criteria
 - workflow and handoff guidance
 - rendering assets and formatting policies
+- schemas, templates, code, or other supporting files when needed
+
+## What this repo provides
+
+- A shared model and vocabulary for AI blueprint contracts
+- Specification scaffolding and normative guidance in `spec/`
+- Conceptual and operational docs in `docs/`
+- Canonical templates and reusable components in `blueprints/`
+- Realistic artifact examples in `examples/`
+- Optional machine-readable helpers in `schemas/`
+- Shared rendering/style assets in `assets/`
 
 ## Example use cases
 
@@ -66,6 +79,7 @@ If you care about practical, composable AI specification systems, contributions 
 
 Start with:
 - `CONTRIBUTING.md`
+- `spec/v1.md`
 - `docs/blueprint-anatomy.md`
 - `examples/gtm-one-pager/README.md`
 
